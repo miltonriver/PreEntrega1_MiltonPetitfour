@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/contacto.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poppins:wght@200&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header_inicio">
+        <div class="div_inicio"> 
+            <img src="/img/redondos_logo.png" alt="logo Los Redondos" class="logo_redondos">
+            <h1 class="titulo_inicio">Página de contacto</h1>
+        <nav>
+            <ul class="lista1_inicio">
+                <li> <a href="../index.html"><button>Inicio</button></a> </li>
+                <li> <a href="integrantes.html" target="_self" ><button>Integrantes</button></a> </li>
+                <li> <a href="discografia.html"><button>Discografía</button></a> </li>
+                <li> <a href="historia.html"><button>Historia</button></a> </li>
+                <li> <a href="#header_inicio" target="_blank"><button>Contacto</button></a> </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main class="principal_contacto">
+        <form action="" class="formulario_contacto">
+            <label for="nombre_apellido">Nombre y Apellido</label>
+            <input type="text" name="nombre_apellido" class="entrada_texto">
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" class="entrada_texto">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" name="correo" class="entrada_texto">
+            <label for="comentario">Comentarios</label>
+            <!-- <input type="text" name="comentarios" class="entrada_comentarios"> -->
+            <textarea name="comentario" rows="6" cols="39">Escribe aquí tu comentario: </textarea>
+            <input type="submit" value="enviar">
+        </form>
+    </main>
+    <footer class="footer_inicio">
+        <form action="">
+            <label for="suscribirse">suscribete</label>
+            <input type="checkbox" name="suscribirse">
+        </form>
+        <div>
+            <img src="../img/facebook.png" alt="facebook" class="icono_facebook">
+            <a href="https://www.facebook.com/miltonmanuel.petitfour">sigueme en facebook</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a> </li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                <li><a href="">Acerca nuestro</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

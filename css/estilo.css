@@ -1,3 +1,4 @@
+/* Reseteo de la página */
 *{
     margin:0;
     padding:0;
@@ -8,20 +9,21 @@ html{
     font-size: 62.5%;
 }
 
+/* Body, header y footer página principal (index) */
 #body_principal{
-    background-color: rgb(127, 255, 127);
+    background-color: rgb(192 199 205 / 62%);
 }
 
+/* header para todas las páginas */
 #header_inicio{
     background-color: #8D99AE;
     display: flex;
     width: 100%;
     padding: 15px;
-    /* margin-bottom: 15px; */
 } 
 
 .div_inicio{
-    display:inline-flex;
+    display:flex;
     justify-content:space-around;
     align-items: center;
     width: 100%;
@@ -40,18 +42,13 @@ html{
     color:red;
 } 
 
+/* menú del navegador del header */
 .lista1_inicio{
     font-family: 'Roboto Mono', monospace, 'Poppins', sans-serif;
     display:flex;
     list-style: none;
     flex-wrap: wrap;
-}
-
-.principal_inicio{
-    /* background-image: url(/img/redondos_fondo.jpg); */
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .lista1_inicio li{
@@ -60,29 +57,87 @@ html{
 
 .lista1_inicio li button{
     padding: 3px 5px;
+    font-weight: bolder;
+    color: #eb0606;
+    border-radius: 10px;
+}
+/* fin del header */
+
+/* main de la página principal (index) */
+.principal_inicio{
+    /* background-image: url(/img/redondos_fondo.jpg); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.parrafo_inicio{
-    font-family: 'Roboto Mono', monospace, 'Poppins', sans-serif;
-    display: inline-flex;
+#seccion_inicial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#articulo_inicial{
+    display: flex;
     flex-direction: column;
     width: 60%;
     align-items: center;
     text-align: justify;
 }
 
+#articulo_inicial section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#articulo_inicial  section h2{
+    color: #bd1f06;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.parrafo_inicio{
+    padding: 5px 15px;
+    margin: 0;
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif, 'Roboto Mono', monospace;
+}
+
 .mi_mapa_inicio{
     width: 300px;
     height: 250px;
     border: 1px solid;
-    margin: 15px 5px 5px 5px;
+    margin: 10px 15px 20px 15px;
 }
 
-.imagen_principal{
-    width: 300px;
+#seccion_index_imagenes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagen_index_principal1{
+    width: 400px;
+    height: 220px;
+    padding: 10px;
+}
+
+.imagen_index_principal2{
+    width: 400px;
     height: 350px;
+    padding: 0px 10px;
 }
 
+.imagen_index_principal3{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+/* fin del main del index */
+
+/* Footer para todas las páginas */
 .footer_inicio{
     font-size: 16px;
     font-family:'Poppins', sans-serif, 'Roboto Mono', monospace, 'Merriweather', serif;
@@ -103,31 +158,54 @@ html{
     height: 20px;
 }
 
+/* Main página de contacto y formulario */
 .principal_contacto{
     background-image: url(../img/redondos_fondo2.jpg);
 }
 
 .formulario_contacto{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
-    color:rgb(190, 221, 231);
+    font-size: 22px;
+    color:rgb(218 215 233);
     padding-left: 20%;
-    display: inline-flex;
+    padding-bottom: 10px;
+    display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.entrada_texto{
-    width: 300px;
-    height: 20px;
+label{
+    padding-top: 25px;
+    padding-bottom: 5px;
 }
 
+.entrada_texto{
+    width: 300px;
+    height: 25px;
+}
+
+.entrada_comentarios{
+    width: 300px;
+    height: 100px;
+    font-size: 14px;
+}
+
+.boton_enviar{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 3px;
+    border-radius: 5px;
+    color:#8D99AE;
+    font-weight: bolder;
+}
+
+/* Main de la página de integrantes, usando grid y flex para las distintas divisiones */
 #principal_integrantes{
     padding: 10px 15px;
     background-color: #d7e1e5;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
     grid-template-areas: 
     "parrafo1 parrafo1 parrafo2 parrafo2"
@@ -141,44 +219,72 @@ html{
 
 #principal_integrantes div p{
     text-align: justify;
-    padding: 10px 20px;
-    color:rgb(188, 188, 214);
+    padding: 30px 50px;
+    color:rgb(101 186 219);
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-size: cover;
 }
 
-.parrafo_indio{
+#principal_integrantes div h2{
+    color:rgb(127 255 214);
+    text-align: center;
+    padding: 15px;
+    padding-top: 30px;
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#principal_integrantes div a{
+    color: #3300ff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#parrafo_indio{
     grid-area: parrafo1;
     background-image: url(../img/indio_solari.jpg);
 }
 
-.parrafo_skay{
+#parrafo_skay{
     grid-area: parrafo2;
     background-image: url(../img/skay.jpg);
 }
 
-.parrafo_semilla{
+#parrafo_semilla{
     grid-area: parrafo3;
     background-image: url(../img/semilla1.jpg);
 }
 
-.parrafo_dawi{
+#parrafo_dawi{
     grid-area: parrafo4;
     background-image: url(../img/dawi.jpg);
 }
 
-.parrafo_sidotti{
+#parrafo_sidotti{
     grid-area: parrafo5;
-    background-image: url(../img/Sidotti.jpg);
-    display:flex;
-    align-items: center;
+    background-image: url(../img/sidotti3.webp);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+/* fin página de integrantes */
 
+/* Cambio de código para pantallas de celulares (máximo 480px) */
 @media screen and (max-width: 480px){
+    #seccion_inicial{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #articulo_inicial{
+        width: 85%;
+    }
+
+    /* Adaptación de la página de Integrantes al diseño responsive */
     #principal_integrantes{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 2fr);
         grid-template-areas: 
         "parrafo1"
         "parrafo2"
@@ -187,6 +293,68 @@ html{
         "parrafo5";
         gap: 5px;
     }
+
+    #principal_integrantes div{
+        height: 350px;
+        display: flex;
+        align-items: center;
+    }
+
+    #principal_integrantes div p{
+        padding: 10px 15px;
+        color:rgb(231 84 84);
+        font-size: 16px;
+    }
+
+    #principal_integrantes div h2{
+        color:rgb(203 15 15);
+        padding: 8px;
+        font-size: 22px;
+    }
+
+    #principal_integrantes div a{
+        color: #00d0ff;
+    }
+    
+    #parrafo_sidotti{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    /* Fin página de integrantes diseño responsive */
+
+    /* menú del navegador de todas las páginas */
+    .lista1_inicio{
+        flex-direction: column;
+        padding: 5px;
+    }
+    
+    /* formulario página de contacto */
+    .formulario_contacto{
+        font-size: 20px;
+        color:rgb(245, 7, 62);
+        padding-left: 0%;
+        align-items:center;
+    }
+    
+    label{
+        padding-top: 20px;
+    }
+        
+    .boton_enviar{
+        color: rgb(85, 85, 131);
+    }
+
+    /* #header_inicio{
+
+    } */
+
+   /*  #header_inicio{
+        background-color: #8D99AE;
+        display: flex;
+        width: 100%;
+        padding: 15px;
+    }  */
+
     .footer_inicio{
         font-size: 12px;
     }
@@ -194,4 +362,5 @@ html{
         font-size: 44px;
         padding: 20px;
     }
+    
 }

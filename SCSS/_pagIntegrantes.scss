@@ -1,0 +1,64 @@
+#principal_integrantes{
+    padding: 10px 15px;
+    background-color: #d7e1e5;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "parrafo1 parrafo1 parrafo2 parrafo2"
+    "parrafo3 parrafo3 parrafo4 parrafo4"
+    "parrafo5 parrafo5 parrafo5 parrafo5";
+    div{
+        background-size: cover;
+        p{
+            text-align: justify;
+            padding: 30px 50px;
+            color:rgb(101 186 219);
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-size: cover;
+        }
+        h2{
+            color:rgb(127 255 214);
+            text-align: center;
+            padding: 15px;
+            padding-top: 30px;
+            font-size: 26px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a{
+            color: #3300ff;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+    }
+} 
+
+#parrafo_indio{
+    grid-area: parrafo1;
+    background-image: url(../img/indio_solari.jpg);
+}
+
+#parrafo_skay{
+    grid-area: parrafo2;
+    background-image: url(../img/skay.jpg);
+}
+
+#parrafo_semilla{
+    grid-area: parrafo3;
+    background-image: url(../img/semilla1.jpg);
+}
+
+#parrafo_dawi{
+    grid-area: parrafo4;
+    background-image: url(../img/dawi.jpg);
+}
+
+#parrafo_sidotti{
+    grid-area: parrafo5;
+    background-image: url(../img/sidotti3.webp);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

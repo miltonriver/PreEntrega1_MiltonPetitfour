@@ -1,0 +1,17 @@
+
+.lista1_inicio{
+    font-family: 'Roboto Mono', monospace, 'Poppins', sans-serif;
+    display:flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    li{
+        padding: 2px 1px;
+        button{
+            padding: 3px 5px;
+            font-weight: bolder;
+            color: #eb0606;
+            border-radius: 10px;
+        }
+    }
+}

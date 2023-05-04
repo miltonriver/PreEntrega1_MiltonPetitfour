@@ -1,5 +1,5 @@
 /* Reseteo de la página */
-*{
+/* *{
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -7,15 +7,15 @@
 
 html{
     font-size: 62.5%;
-}
+} */
 
 /* Body, header y footer página principal (index) */
-#body_principal{
+/* #body_principal{
     background-color: rgb(192 199 205 / 62%);
-}
+} */
 
 /* header para todas las páginas */
-#header_inicio{
+/* #header_inicio{
     background-color: #8D99AE;
     display: flex;
     width: 100%;
@@ -40,9 +40,9 @@ html{
     font-size: 62px;
     text-align: center;
     color:red;
-} 
+}  */
 
-/* menú del navegador del header */
+/* menú del navegador del header *//* 
 .lista1_inicio{
     font-family: 'Roboto Mono', monospace, 'Poppins', sans-serif;
     display:flex;
@@ -60,13 +60,12 @@ html{
     font-weight: bolder;
     color: #eb0606;
     border-radius: 10px;
-}
+} */
 /* fin del header */
 
-/* main de la página principal (index) */
+/* main de la página principal (index)
 .principal_inicio{
-    /* background-image: url(/img/redondos_fondo.jpg); */
-    display: flex;
+    isplay: flex;
     align-items: center;
     justify-content: space-around;
 }
@@ -135,9 +134,9 @@ html{
     height: 200px;
     padding: 10px;
 }
-/* fin del main del index */
+fin del main del index */
 
-/* Footer para todas las páginas */
+/* Footer para todas las páginas 
 .footer_inicio{
     font-size: 16px;
     font-family:'Poppins', sans-serif, 'Roboto Mono', monospace, 'Merriweather', serif;
@@ -150,15 +149,14 @@ html{
     align-items: center;
     flex-wrap: wrap;
     align-content: space-around;
-    /* margin:15px 5px; */
 } 
 
 .icono_facebook{
     width: 20px;
     height: 20px;
-}
+} */
 
-/* Main página de contacto y formulario */
+/* Main página de contacto y formulario
 .principal_contacto{
     background-image: url(../img/redondos_fondo2.jpg);
 }
@@ -197,9 +195,9 @@ label{
     border-radius: 5px;
     color:#8D99AE;
     font-weight: bolder;
-}
+} */
 
-/* Main de la página de integrantes, usando grid y flex para las distintas divisiones */
+/* Main de la página de integrantes, usando grid y flex para las distintas divisiones
 #principal_integrantes{
     padding: 10px 15px;
     background-color: #d7e1e5;
@@ -268,10 +266,10 @@ label{
     flex-direction: column;
     justify-content: space-evenly;
 }
-/* fin página de integrantes */
+fin página de integrantes */
 
 /* Cambio de código para pantallas de celulares (máximo 480px) */
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 480px){
     #seccion_inicial{
         flex-direction: column;
         align-items: center;
@@ -281,7 +279,7 @@ label{
         width: 85%;
     }
 
-    /* Adaptación de la página de Integrantes al diseño responsive */
+    Adaptación de la página de Integrantes al diseño responsive
     #principal_integrantes{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 2fr);
@@ -322,13 +320,13 @@ label{
     }
     /* Fin página de integrantes diseño responsive */
 
-    /* menú del navegador de todas las páginas */
+    /* menú del navegador de todas las páginas
     .lista1_inicio{
         flex-direction: column;
         padding: 5px;
     }
     
-    /* formulario página de contacto */
+    /* formulario página de contacto
     .formulario_contacto{
         font-size: 20px;
         color:rgb(245, 7, 62);
@@ -344,17 +342,6 @@ label{
         color: rgb(85, 85, 131);
     }
 
-    /* #header_inicio{
-
-    } */
-
-   /*  #header_inicio{
-        background-color: #8D99AE;
-        display: flex;
-        width: 100%;
-        padding: 15px;
-    }  */
-
     .footer_inicio{
         font-size: 12px;
     }
@@ -363,4 +350,4 @@ label{
         padding: 20px;
     }
     
-}
+} */

@@ -1,0 +1,79 @@
+#principal_discografia{
+    background-color: #d7e1e5;
+    #seccion_principal_discografia{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr;
+        gap: 5px;
+        grid-template-areas: 
+        "disco1 disco2 disco3"
+        "disco4 disco5 disco6"
+        "disco7 disco8 disco9"
+        ". disco10 .";
+        .disco_Gulp{
+            grid-area: disco1;
+        }
+        .disco_Oktubre{
+            grid-area: disco2;
+        }
+        .disco_Baion{
+            grid-area: disco3;
+        }
+        .disco_Bang{
+            grid-area: disco4;
+        }
+        .disco_Mosca{
+            grid-area: disco5;
+        }
+        .disco_LoboVol1{
+            grid-area: disco6;
+        }
+        .disco_LoboVol2{
+            grid-area: disco7;
+        }
+        .disco_Luzbelito{
+            grid-area: disco8;
+        }
+        .disco_Bondi{
+            grid-area: disco9;
+        }
+        .disco_Momo{
+            grid-area: disco10;
+        }
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+            
+            margin: 10px;
+            margin-top: 0px;
+            margin-bottom: 0;
+            padding: 10px;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+            .imagen_disco4{
+                width: 220px;
+            }
+            h2{
+                font-size: 22px;
+                text-align: center;
+                margin: 10px;
+            }
+            ol{
+                font-size: 12px;
+                margin: 10px;
+                margin-left: 30px;
+                padding: 5px;
+                li{
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,76 @@
+@media screen and (max-width: 480px){
+    #seccion_inicial{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #articulo_inicial{
+        width: 85%;
+    }
+
+    /* Adaptación de la página de Integrantes al diseño responsive */
+    #principal_integrantes{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 2fr);
+        grid-template-areas: 
+        "parrafo1"
+        "parrafo2"
+        "parrafo3"
+        "parrafo4"
+        "parrafo5";
+        gap: 5px;
+        div{
+            height: 350px;
+            display: flex;
+            align-items: center;
+            p{
+                padding: 10px 15px;
+                color:rgb(231 84 84);
+                font-size: 16px;
+            }
+            h2{
+                color:rgb(203 15 15);
+                padding: 8px;
+                font-size: 22px;
+            }
+            a{
+                color: #00d0ff;
+            }
+        }
+    }
+
+
+    #parrafo_sidotti{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    /* Fin página de integrantes diseño responsive */
+
+    /* menú del navegador de todas las páginas */
+    .lista1_inicio{
+        flex-direction: column;
+        padding: 5px;
+    }
+    
+    /* formulario página de contacto */
+    .formulario_contacto{
+        font-size: 20px;
+        color:rgb(245, 7, 62);
+        padding-left: 0%;
+        align-items:center;
+    }
+    
+    label{
+        padding-top: 20px;
+    }
+    .boton_enviar{
+        color: rgb(85, 85, 131);
+    }
+    .footer_inicio{
+        font-size: 12px;
+    }
+    .titulo_inicio{
+        font-size: 44px;
+        padding: 20px;
+    }    
+}

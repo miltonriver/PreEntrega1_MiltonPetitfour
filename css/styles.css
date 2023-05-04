@@ -1,0 +1,391 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#header_inicio {
+  background-color: #8D99AE;
+  display: flex;
+  width: 100%;
+  padding: 15px;
+}
+
+.div_inicio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.logo_redondos {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.titulo_inicio {
+  font-family: "Merriweather", serif, "Poppins", sans-serif;
+  font-size: 62px;
+  text-align: center;
+  color: red;
+}
+
+.lista1_inicio {
+  font-family: "Roboto Mono", monospace, "Poppins", sans-serif;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lista1_inicio li {
+  padding: 2px 1px;
+}
+.lista1_inicio li button {
+  padding: 3px 5px;
+  font-weight: bolder;
+  color: #eb0606;
+  border-radius: 10px;
+}
+
+#body_principal {
+  background-color: rgba(192, 199, 205, 0.62);
+}
+
+/* main de la página principal (index) */
+.principal_inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#seccion_inicial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#articulo_inicial {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  text-align: justify;
+}
+#articulo_inicial section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#articulo_inicial section h2 {
+  color: #bd1f06;
+  font-size: 20px;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.parrafo_inicio {
+  padding: 5px 15px;
+  margin: 0;
+  font-size: 11px;
+  font-family: "Poppins", sans-serif, "Roboto Mono", monospace;
+}
+
+.mi_mapa_inicio {
+  width: 300px;
+  height: 250px;
+  border: 1px solid;
+  margin: 10px 15px 20px 15px;
+}
+
+#seccion_index_imagenes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imagen_index_principal1 {
+  width: 400px;
+  height: 220px;
+  padding: 10px;
+}
+
+.imagen_index_principal2 {
+  width: 400px;
+  height: 350px;
+  padding: 0px 10px;
+}
+
+.imagen_index_principal3 {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+}
+
+#principal_integrantes {
+  padding: 10px 15px;
+  background-color: #d7e1e5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas: "parrafo1 parrafo1 parrafo2 parrafo2" "parrafo3 parrafo3 parrafo4 parrafo4" "parrafo5 parrafo5 parrafo5 parrafo5";
+}
+#principal_integrantes div {
+  background-size: cover;
+}
+#principal_integrantes div p {
+  text-align: justify;
+  padding: 30px 50px;
+  color: rgb(101, 186, 219);
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-size: cover;
+}
+#principal_integrantes div h2 {
+  color: rgb(127, 255, 214);
+  text-align: center;
+  padding: 15px;
+  padding-top: 30px;
+  font-size: 26px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#principal_integrantes div a {
+  color: #3300ff;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#parrafo_indio {
+  grid-area: parrafo1;
+  background-image: url(../img/indio_solari.jpg);
+}
+
+#parrafo_skay {
+  grid-area: parrafo2;
+  background-image: url(../img/skay.jpg);
+}
+
+#parrafo_semilla {
+  grid-area: parrafo3;
+  background-image: url(../img/semilla1.jpg);
+}
+
+#parrafo_dawi {
+  grid-area: parrafo4;
+  background-image: url(../img/dawi.jpg);
+}
+
+#parrafo_sidotti {
+  grid-area: parrafo5;
+  background-image: url(../img/sidotti3.webp);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#principal_discografia {
+  background-color: #d7e1e5;
+}
+#principal_discografia #seccion_principal_discografia {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr;
+  gap: 5px;
+  grid-template-areas: "disco1 disco2 disco3" "disco4 disco5 disco6" "disco7 disco8 disco9" ". disco10 .";
+}
+#principal_discografia #seccion_principal_discografia .disco_Gulp {
+  grid-area: disco1;
+}
+#principal_discografia #seccion_principal_discografia .disco_Oktubre {
+  grid-area: disco2;
+}
+#principal_discografia #seccion_principal_discografia .disco_Baion {
+  grid-area: disco3;
+}
+#principal_discografia #seccion_principal_discografia .disco_Bang {
+  grid-area: disco4;
+}
+#principal_discografia #seccion_principal_discografia .disco_Mosca {
+  grid-area: disco5;
+}
+#principal_discografia #seccion_principal_discografia .disco_LoboVol1 {
+  grid-area: disco6;
+}
+#principal_discografia #seccion_principal_discografia .disco_LoboVol2 {
+  grid-area: disco7;
+}
+#principal_discografia #seccion_principal_discografia .disco_Luzbelito {
+  grid-area: disco8;
+}
+#principal_discografia #seccion_principal_discografia .disco_Bondi {
+  grid-area: disco9;
+}
+#principal_discografia #seccion_principal_discografia .disco_Momo {
+  grid-area: disco10;
+}
+#principal_discografia #seccion_principal_discografia div {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding: 10px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#principal_discografia #seccion_principal_discografia div img {
+  width: 150px;
+  height: 150px;
+}
+#principal_discografia #seccion_principal_discografia div .imagen_disco4 {
+  width: 220px;
+}
+#principal_discografia #seccion_principal_discografia div h2 {
+  font-size: 22px;
+  text-align: center;
+  margin: 10px;
+}
+#principal_discografia #seccion_principal_discografia div ol {
+  font-size: 12px;
+  margin: 10px;
+  margin-left: 30px;
+  padding: 5px;
+}
+#principal_discografia #seccion_principal_discografia div ol li {
+  padding: 5px;
+}
+
+.principal_contacto {
+  background-image: url(../img/redondos_fondo2.jpg);
+}
+
+/* Formulario de contacto */
+.formulario_contacto {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 22px;
+  color: rgb(218, 215, 233);
+  padding-left: 20%;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+label {
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.entrada_texto {
+  width: 300px;
+  height: 25px;
+}
+
+.entrada_comentarios {
+  width: 300px;
+  height: 100px;
+  font-size: 14px;
+}
+
+.boton_enviar {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 3px;
+  border-radius: 5px;
+  color: #8D99AE;
+  font-weight: bolder;
+}
+
+.footer_inicio {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif, "Roboto Mono", monospace, "Merriweather", serif;
+  color: rgb(240, 9, 17);
+  border: 1px solid;
+  background-color: #8D99AE;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.icono_facebook {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  #seccion_inicial {
+    flex-direction: column;
+    align-items: center;
+  }
+  #articulo_inicial {
+    width: 85%;
+  }
+  /* Adaptación de la página de Integrantes al diseño responsive */
+  #principal_integrantes {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 2fr);
+    grid-template-areas: "parrafo1" "parrafo2" "parrafo3" "parrafo4" "parrafo5";
+    gap: 5px;
+  }
+  #principal_integrantes div {
+    height: 350px;
+    display: flex;
+    align-items: center;
+  }
+  #principal_integrantes div p {
+    padding: 10px 15px;
+    color: rgb(231, 84, 84);
+    font-size: 16px;
+  }
+  #principal_integrantes div h2 {
+    color: rgb(203, 15, 15);
+    padding: 8px;
+    font-size: 22px;
+  }
+  #principal_integrantes div a {
+    color: #00d0ff;
+  }
+  #parrafo_sidotti {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  /* Fin página de integrantes diseño responsive */
+  /* menú del navegador de todas las páginas */
+  .lista1_inicio {
+    flex-direction: column;
+    padding: 5px;
+  }
+  /* formulario página de contacto */
+  .formulario_contacto {
+    font-size: 20px;
+    color: rgb(245, 7, 62);
+    padding-left: 0%;
+    align-items: center;
+  }
+  label {
+    padding-top: 20px;
+  }
+  .boton_enviar {
+    color: rgb(85, 85, 131);
+  }
+  .footer_inicio {
+    font-size: 12px;
+  }
+  .titulo_inicio {
+    font-size: 44px;
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

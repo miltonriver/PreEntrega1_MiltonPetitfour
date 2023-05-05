@@ -38,13 +38,67 @@
             }
         }
     }
-
-
     #parrafo_sidotti{
         flex-direction: row;
         justify-content: space-evenly;
     }
     /* Fin página de integrantes diseño responsive */
+
+    /* adaptación al diseño responsive página de discografía */
+    #principal_discografia{
+        #seccion_principal_discografia{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 0px;
+        grid-template-areas: 
+        "disco1 disco2"
+        "disco3 disco4"
+        "disco5 disco6"
+        "disco7 disco8"
+        "disco9 disco10";
+        div{
+            margin: 0px;
+            margin-top: 10px;
+            padding-top: 10px;
+            a{
+                &:hover{
+                    font-size: 14px;
+                    img{
+                        width: 160px;
+                        height: 160px;
+                    }
+                    .imagen_disco4{
+                        width: 200px;
+                        height: 160px;
+                    }
+                }
+            }
+            img{
+                width: 130px;
+                height: 130px;
+            }
+            .imagen_disco4{
+                width: 180px;
+                }
+            h2{
+                font-size: 20px;
+                margin: 5px;
+                }
+            ol{
+                margin: 5px;
+                margin-left: 15px;
+                padding: 3px;
+                li{
+                    padding: 3px;
+                    audio{
+                        width: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Fin de diseño responsive página de discografía */
 
     /* menú del navegador de todas las páginas */
     .lista1_inicio{
@@ -59,7 +113,6 @@
         padding-left: 0%;
         align-items:center;
     }
-    
     label{
         padding-top: 20px;
     }
@@ -72,5 +125,6 @@
     .titulo_inicio{
         font-size: 44px;
         padding: 20px;
-    }    
+    }
+    /* fin formulario página de contactos */  
 }

@@ -241,6 +241,20 @@ html {
   flex-direction: column;
   align-items: center;
 }
+#principal_discografia #seccion_principal_discografia div a {
+  text-decoration: none;
+}
+#principal_discografia #seccion_principal_discografia div a:hover {
+  font-size: 16px;
+}
+#principal_discografia #seccion_principal_discografia div a:hover img {
+  width: 200px;
+  height: 200px;
+}
+#principal_discografia #seccion_principal_discografia div a:hover .imagen_disco4 {
+  width: 250px;
+  height: 200px;
+}
 #principal_discografia #seccion_principal_discografia div img {
   width: 150px;
   height: 150px;
@@ -265,6 +279,7 @@ html {
 #principal_discografia #seccion_principal_discografia div ol li audio {
   width: 190px;
   height: 20px;
+  margin-top: 5px;
 }
 
 .principal_contacto {
@@ -365,6 +380,52 @@ label {
     justify-content: space-evenly;
   }
   /* Fin página de integrantes diseño responsive */
+  /* adaptación al diseño responsive página de discografía */
+  #principal_discografia #seccion_principal_discografia {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 0px;
+    grid-template-areas: "disco1 disco2" "disco3 disco4" "disco5 disco6" "disco7 disco8" "disco9 disco10";
+  }
+  #principal_discografia #seccion_principal_discografia div {
+    margin: 0px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  #principal_discografia #seccion_principal_discografia div a:hover {
+    font-size: 14px;
+  }
+  #principal_discografia #seccion_principal_discografia div a:hover img {
+    width: 160px;
+    height: 160px;
+  }
+  #principal_discografia #seccion_principal_discografia div a:hover .imagen_disco4 {
+    width: 200px;
+    height: 160px;
+  }
+  #principal_discografia #seccion_principal_discografia div img {
+    width: 130px;
+    height: 130px;
+  }
+  #principal_discografia #seccion_principal_discografia div .imagen_disco4 {
+    width: 180px;
+  }
+  #principal_discografia #seccion_principal_discografia div h2 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  #principal_discografia #seccion_principal_discografia div ol {
+    margin: 5px;
+    margin-left: 15px;
+    padding: 3px;
+  }
+  #principal_discografia #seccion_principal_discografia div ol li {
+    padding: 3px;
+  }
+  #principal_discografia #seccion_principal_discografia div ol li audio {
+    width: 180px;
+  }
+  /* Fin de diseño responsive página de discografía */
   /* menú del navegador de todas las páginas */
   .lista1_inicio {
     flex-direction: column;
@@ -390,6 +451,7 @@ label {
     font-size: 44px;
     padding: 20px;
   }
+  /* fin formulario página de contactos */
 }
 
 /*# sourceMappingURL=styles.css.map */

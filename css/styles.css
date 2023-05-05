@@ -262,6 +262,10 @@ html {
 #principal_discografia #seccion_principal_discografia div ol li {
   padding: 5px;
 }
+#principal_discografia #seccion_principal_discografia div ol li audio {
+  width: 190px;
+  height: 20px;
+}
 
 .principal_contacto {
   background-image: url(../img/redondos_fondo2.jpg);

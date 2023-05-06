@@ -279,9 +279,85 @@ html {
 
 #principal_historia {
   background-color: #d7e1e5;
+  /* contenidos para toda la página en general */
+  /* fin de los contenidos generales */
+}
+#principal_historia h1 {
+  font-size: 26px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 5px;
+  padding: 10px;
+}
+#principal_historia h2 {
+  font-size: 20px;
+  margin-left: 12px;
+  padding: 10px;
+}
+#principal_historia .parrafo_descriptivo_historia {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0px 20px;
+  padding: 10px;
+  text-align: justify;
 }
 #principal_historia #seccion_principal_historia {
   font-family: Arial, sans-serif, "Franklin Gothic Medium", "Arial Narrow";
+  /* código para cada uno de los artículos internos en particular */
+  /* inicio artículo introducción */
+  /* fin artículo introducción */
+  /* inicio artículo orígenes de la banda */
+  /* fin artículo orígenes de la banda */
+  /* inicio artículo integrantes */
+}
+#principal_historia #seccion_principal_historia #articulo_introduccion_historia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#principal_historia #seccion_principal_historia #articulo_introduccion_historia #introduccion_historia {
+  display: flex;
+  align-items: center;
+}
+#principal_historia #seccion_principal_historia #articulo_introduccion_historia #introduccion_historia .imagen_banda {
+  width: 150px;
+  height: 100px;
+  margin: 0px 30px 0px 10px;
+}
+#principal_historia #seccion_principal_historia #articulo_introduccion_historia #articulo_origenes_historia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#principal_historia #seccion_principal_historia #articulo_origenes_historia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#principal_historia #seccion_principal_historia #articulo_origenes_historia #origenes_historia {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+#principal_historia #seccion_principal_historia #articulo_origenes_historia #origenes_historia img {
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+  margin-left: 20px;
+}
+#principal_historia #seccion_principal_historia #integrantes_historia {
+  display: flex;
+  align-items: center;
+}
+#principal_historia #seccion_principal_historia #integrantes_historia img {
+  margin-right: 30px;
+}
+#principal_historia #seccion_principal_historia #integrantes_historia .imagen1_integrantes {
+  width: 170px;
+  height: 110px;
+}
+#principal_historia #seccion_principal_historia #integrantes_historia .imagen2_integrantes {
+  width: 170px;
+  height: 150px;
 }
 
 .principal_contacto {
@@ -423,6 +499,31 @@ html {
     width: 180px;
   }
   /* Fin de diseño responsive página de discografía */
+  /* inicio diseño responsive página de historia */
+  #principal_historia #seccion_principal_historia #articulo_origenes_historia #origenes_historia {
+    flex-direction: column;
+  }
+  #principal_historia #seccion_principal_historia #articulo_origenes_historia #origenes_historia img {
+    margin: 10px;
+  }
+  #principal_historia #seccion_principal_historia #integrantes_historia {
+    flex-direction: column;
+  }
+  #principal_historia #seccion_principal_historia #integrantes_historia figure {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+  }
+  #principal_historia #seccion_principal_historia #integrantes_historia .imagen1_integrantes {
+    width: 170px;
+    height: 130px;
+    margin: 10px;
+  }
+  #principal_historia #seccion_principal_historia #integrantes_historia .imagen2_integrantes {
+    width: 200px;
+    height: 130px;
+    margin: 10px;
+  }
   /* menú del navegador de todas las páginas */
   .lista1_inicio {
     flex-direction: column;

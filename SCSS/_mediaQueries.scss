@@ -100,6 +100,38 @@
     }
     /* Fin de diseño responsive página de discografía */
 
+    /* inicio diseño responsive página de historia */
+    #principal_historia{
+        #seccion_principal_historia{
+                #articulo_origenes_historia{
+                    #origenes_historia {
+                        flex-direction: column;
+                        img{
+                            margin: 10px;
+                        }
+                    }
+                }
+                #integrantes_historia{
+                    flex-direction:column;
+                    figure{
+                        display: flex;
+                        align-items: center;
+                        margin: 15px;
+                    }
+                    .imagen1_integrantes{
+                        width: 170px;
+                        height: 130px;
+                        margin: 10px;
+                    }
+                    .imagen2_integrantes{
+                        width: 200px;
+                        height: 130px;
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+
     /* menú del navegador de todas las páginas */
     .lista1_inicio{
         flex-direction: column;

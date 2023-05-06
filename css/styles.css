@@ -136,6 +136,29 @@ html {
   gap: 10px;
   grid-template-areas: "parrafo1 parrafo1 parrafo2 parrafo2" "parrafo3 parrafo3 parrafo4 parrafo4" "parrafo5 parrafo5 parrafo5 parrafo5";
 }
+#principal_integrantes #parrafo_indio {
+  grid-area: parrafo1;
+  background-image: url(../img/integrantes/indio_solari.jpg);
+}
+#principal_integrantes #parrafo_skay {
+  grid-area: parrafo2;
+  background-image: url(../img/integrantes/skay.jpg);
+}
+#principal_integrantes #parrafo_semilla {
+  grid-area: parrafo3;
+  background-image: url(../img/integrantes/semilla1.jpg);
+}
+#principal_integrantes #parrafo_dawi {
+  grid-area: parrafo4;
+  background-image: url(../img/integrantes/dawi.jpg);
+}
+#principal_integrantes #parrafo_sidotti {
+  grid-area: parrafo5;
+  background-image: url(../img/integrantes/sidotti3.webp);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 #principal_integrantes div {
   background-size: cover;
 }
@@ -159,34 +182,6 @@ html {
   color: #3300ff;
   text-decoration: none;
   font-weight: bolder;
-}
-
-#parrafo_indio {
-  grid-area: parrafo1;
-  background-image: url(../img/indio_solari.jpg);
-}
-
-#parrafo_skay {
-  grid-area: parrafo2;
-  background-image: url(../img/skay.jpg);
-}
-
-#parrafo_semilla {
-  grid-area: parrafo3;
-  background-image: url(../img/semilla1.jpg);
-}
-
-#parrafo_dawi {
-  grid-area: parrafo4;
-  background-image: url(../img/dawi.jpg);
-}
-
-#parrafo_sidotti {
-  grid-area: parrafo5;
-  background-image: url(../img/sidotti3.webp);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 
 #principal_discografia {
@@ -282,12 +277,18 @@ html {
   margin-top: 5px;
 }
 
-.principal_contacto {
-  background-image: url(../img/redondos_fondo2.jpg);
+#principal_historia {
+  background-color: #d7e1e5;
+}
+#principal_historia #seccion_principal_historia {
+  font-family: Arial, sans-serif, "Franklin Gothic Medium", "Arial Narrow";
 }
 
-/* Formulario de contacto */
-.formulario_contacto {
+.principal_contacto {
+  background-image: url(../img/contacto/redondos_fondo2.jpg);
+  /* Formulario de contacto */
+}
+.principal_contacto .formulario_contacto {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 22px;
   color: rgb(218, 215, 233);
@@ -297,24 +298,20 @@ html {
   align-items: flex-start;
   flex-direction: column;
 }
-
-label {
+.principal_contacto .formulario_contacto label {
   padding-top: 25px;
   padding-bottom: 5px;
 }
-
-.entrada_texto {
+.principal_contacto .formulario_contacto .entrada_texto {
   width: 300px;
   height: 25px;
 }
-
-.entrada_comentarios {
+.principal_contacto .formulario_contacto .entrada_comentarios {
   width: 300px;
   height: 100px;
   font-size: 14px;
 }
-
-.boton_enviar {
+.principal_contacto .formulario_contacto .boton_enviar {
   margin-top: 15px;
   margin-bottom: 10px;
   padding: 3px;
@@ -432,16 +429,16 @@ label {
     padding: 5px;
   }
   /* formulario página de contacto */
-  .formulario_contacto {
+  .principal_contacto .formulario_contacto {
     font-size: 20px;
     color: rgb(245, 7, 62);
     padding-left: 0%;
     align-items: center;
   }
-  label {
+  .principal_contacto .formulario_contacto label {
     padding-top: 20px;
   }
-  .boton_enviar {
+  .principal_contacto .formulario_contacto .boton_enviar {
     color: rgb(85, 85, 131);
   }
   .footer_inicio {

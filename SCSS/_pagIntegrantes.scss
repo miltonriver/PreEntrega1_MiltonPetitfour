@@ -9,6 +9,29 @@
     "parrafo1 parrafo1 parrafo2 parrafo2"
     "parrafo3 parrafo3 parrafo4 parrafo4"
     "parrafo5 parrafo5 parrafo5 parrafo5";
+    #parrafo_indio{
+        grid-area: parrafo1;
+        background-image: url(../img/integrantes/indio_solari.jpg);
+    }
+    #parrafo_skay{
+        grid-area: parrafo2;
+        background-image: url(../img/integrantes/skay.jpg);
+    }
+    #parrafo_semilla{
+        grid-area: parrafo3;
+        background-image: url(../img/integrantes/semilla1.jpg);
+    }
+    #parrafo_dawi{
+        grid-area: parrafo4;
+        background-image: url(../img/integrantes/dawi.jpg);
+    }
+    #parrafo_sidotti{
+        grid-area: parrafo5;
+        background-image: url(../img/integrantes/sidotti3.webp);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     div{
         background-size: cover;
         p{
@@ -33,32 +56,4 @@
             font-weight: bolder;
         }
     }
-} 
-
-#parrafo_indio{
-    grid-area: parrafo1;
-    background-image: url(../img/indio_solari.jpg);
-}
-
-#parrafo_skay{
-    grid-area: parrafo2;
-    background-image: url(../img/skay.jpg);
-}
-
-#parrafo_semilla{
-    grid-area: parrafo3;
-    background-image: url(../img/semilla1.jpg);
-}
-
-#parrafo_dawi{
-    grid-area: parrafo4;
-    background-image: url(../img/dawi.jpg);
-}
-
-#parrafo_sidotti{
-    grid-area: parrafo5;
-    background-image: url(../img/sidotti3.webp);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }

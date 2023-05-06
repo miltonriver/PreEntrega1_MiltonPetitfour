@@ -107,17 +107,19 @@
     }
     
     /* formulario página de contacto */
-    .formulario_contacto{
-        font-size: 20px;
-        color:rgb(245, 7, 62);
-        padding-left: 0%;
-        align-items:center;
-    }
-    label{
-        padding-top: 20px;
-    }
-    .boton_enviar{
-        color: rgb(85, 85, 131);
+    .principal_contacto{
+        .formulario_contacto{
+            font-size: 20px;
+            color:rgb(245, 7, 62);
+            padding-left: 0%;
+            align-items:center;
+            label{
+                padding-top: 20px;
+            }
+            .boton_enviar{
+                color: rgb(85, 85, 131);
+            }
+        }
     }
     .footer_inicio{
         font-size: 12px;

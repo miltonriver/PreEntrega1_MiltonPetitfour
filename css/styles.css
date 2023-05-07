@@ -84,15 +84,17 @@ html {
 }
 #articulo_inicial section h2 {
   color: #bd1f06;
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .parrafo_inicio {
+  color: #161A1D;
   padding: 5px 15px;
   margin: 0;
-  font-size: 11px;
+  font-weight: bold;
+  font-size: 13px;
   font-family: "Poppins", sans-serif, "Roboto Mono", monospace;
 }
 
@@ -258,6 +260,7 @@ html {
   width: 220px;
 }
 #principal_discografia #seccion_principal_discografia div h2 {
+  color: #660708;
   font-size: 22px;
   text-align: center;
   margin: 10px;
@@ -269,6 +272,7 @@ html {
   padding: 5px;
 }
 #principal_discografia #seccion_principal_discografia div ol li {
+  color: #BA181B;
   padding: 5px;
 }
 #principal_discografia #seccion_principal_discografia div ol li audio {
@@ -283,17 +287,20 @@ html {
   /* fin de los contenidos generales */
 }
 #principal_historia h1 {
+  color: #A4161A;
   font-size: 26px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-left: 5px;
   padding: 10px;
 }
 #principal_historia h2 {
+  color: #BA181B;
   font-size: 20px;
   margin-left: 12px;
   padding: 10px;
 }
 #principal_historia .parrafo_descriptivo_historia {
+  color: #223a4d;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   margin: 0px 20px;
@@ -367,7 +374,7 @@ html {
 .principal_contacto .formulario_contacto {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 22px;
-  color: rgb(218, 215, 233);
+  color: #E5383B;
   padding-left: 20%;
   padding-bottom: 10px;
   display: flex;

@@ -1,57 +1,87 @@
-#principal_integrantes{
+#principal_integrantes {
     padding: 10px 15px;
     background-color: #d7e1e5;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
-    grid-template-areas: 
-    "parrafo1 parrafo1 parrafo2 parrafo2"
-    "parrafo3 parrafo3 parrafo4 parrafo4"
-    "parrafo5 parrafo5 parrafo5 parrafo5";
-    #parrafo_indio{
+    grid-template-areas:
+        "parrafo1 parrafo1 parrafo2 parrafo2"
+        "parrafo3 parrafo3 parrafo4 parrafo4"
+        "parrafo5 parrafo5 parrafo5 parrafo5";
+
+    #parrafo_indio {
         grid-area: parrafo1;
         background-image: url(../img/integrantes/indio_solari.jpg);
     }
-    #parrafo_skay{
+
+    #parrafo_skay {
         grid-area: parrafo2;
         background-image: url(../img/integrantes/skay.jpg);
     }
-    #parrafo_semilla{
+
+    #parrafo_semilla {
         grid-area: parrafo3;
         background-image: url(../img/integrantes/semilla1.jpg);
     }
-    #parrafo_dawi{
+
+    #parrafo_dawi {
         grid-area: parrafo4;
         background-image: url(../img/integrantes/dawi.jpg);
     }
-    #parrafo_sidotti{
+
+    #parrafo_sidotti {
         grid-area: parrafo5;
         background-image: url(../img/integrantes/sidotti3.webp);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    div{
+
+    /* párrafos descriptivos e imágenes de fondo página de integrantes */
+    div {
         background-size: cover;
-        p{
+
+        p {
             text-align: justify;
             padding: 30px 50px;
-            color:rgb(101 186 219);
             font-size: 18px;
+            font-weight: 500;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             background-size: cover;
         }
-        h2{
-            color:rgb(127 255 214);
+
+        .parrafo_historia_indio{
+            color: rgb(101 186 219);
+        }
+
+        .parrafo_historia_skay{
+            color: rgb(16 17 54);
+        }
+
+        .parrafo_historia_semilla{
+            color: rgb(56 243 200);
+        }
+
+        .parrafo_historia_dawi{
+            color: rgb(225 234 235);
+        }
+
+        .parrafo_historia_sidotti{
+            color: rgb(101 186 219);
+        }
+
+        h2 {
+            color: rgb(127 255 214);
             text-align: center;
             padding: 15px;
             padding-top: 30px;
             font-size: 26px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-        a{
-            color: #3300ff;
+
+        a {
+            color: #970909;
             text-decoration: none;
             font-weight: bolder;
         }

@@ -1,12 +1,13 @@
 @import "reset";
+@import "error";
 @import "header";
 @import "menu";
 @import "pagInicio";
 @import "pagIntegrantes";
 @import "pagDiscografia";
+@import "seccionDiscografia";
 @import "pagHistoria";
 @import "pagContacto";
 @import "footer";
 @import "mediaQueries";
-
-
+@import "responsive800px";

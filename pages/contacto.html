@@ -20,44 +20,47 @@
         <div class="div_inicio"> 
             <img src="../img/redondos_logo.png" alt="logo Los Redondos" class="logo_redondos">
             <h1 class="titulo_inicio">Página de contacto</h1>
-        <nav>
-            <ul class="lista1_inicio">
-                <li> <a href="../index.html"><button>Inicio</button></a> </li>
-                <li> <a href="integrantes.html" target="_self" ><button>Integrantes</button></a> </li>
-                <li> <a href="discografia.html"><button>Discografía</button></a> </li>
-                <li> <a href="historia.html"><button>Historia</button></a> </li>
-                <li> <a href="#header_inicio" target="_blank"><button>Contacto</button></a> </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="lista1_inicio">
+                    <li><a href="../index.html"><button class="boton_nav_header">Inicio</button></a></li>
+                    <li><a href="integrantes.html" target="_self"><button class="boton_nav_header">Integrantes</button></a></li>
+                    <li><a href="discografia.html"><button class="boton_nav_header">Discografía</button></a></li>
+                    <li><a href="historia.html"><button class="boton_nav_header">Historia</button></a></li>
+                    <li><a href="contacto.html" target="_blank"><button class="boton_nav_header">Contacto</button></a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main class="principal_contacto">
-        <form action="" class="formulario_contacto">
-            <label for="nombre_apellido">Nombre y Apellido</label>
-            <input type="text" name="nombre_apellido" class="entrada_texto">
-            <label for="direccion">Dirección</label>
-            <input type="text" name="direccion" class="entrada_texto">
-            <label for="correo">Correo electrónico</label>
-            <input type="email" name="correo" class="entrada_texto">
-            <label for="comentario">Comentarios</label>
-            <textarea name="comentario" rows="9"class="entrada_comentarios">Escribe aquí tu comentario: </textarea>
-            <input type="submit" value="enviar" class="boton_enviar">
-        </form>
+        <section id="contenedor_formulario_contacto">
+            <form action="" class="formulario_contacto">
+                <label for="nombre_apellido">Nombre y Apellido</label>
+                <input type="text" name="nombre_apellido" class="entrada_texto">
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" class="entrada_texto">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" name="correo" class="entrada_texto">
+                <label for="comentario">Comentarios</label>
+                <textarea name="comentario" rows="9"class="entrada_comentarios">Escribe aquí tu comentario: </textarea>
+                <input type="submit" value="enviar" class="boton_enviar">
+            </form>
+        </section>
+        
     </main>
     <footer class="footer_inicio">
         <form action="">
-            <label for="suscribirse">suscribete</label>
+            <label for="suscribirse" class="checkbox_footer">Suscríbete</label>
             <input type="checkbox" name="suscribirse">
         </form>
         <div>
             <img src="../img/iconos/facebook.png" alt="facebook" class="icono_facebook">
-            <a href="https://www.facebook.com/miltonmanuel.petitfour">sigueme en facebook</a>
+            <a href="https://www.facebook.com/miltonmanuel.petitfour" class="enlace_facebook_footer">Sígueme en Facebook</a>
         </div>
         <nav>
             <ul>
-                <li><a href="">Home</a> </li>
-                <li><a href="contacto.html" target="_blank">Contacto</a></li>
-                <li><a href="">Acerca nuestro</a></li>
+                <li><a href="../index.html" class="enlace_nav_footer">Home</a> </li>
+                <li><a href="contacto.html" class="enlace_nav_footer">Contacto</a></li>
+                <li><a href="error.html" class="enlace_nav_footer">Acerca nuestro</a></li>
             </ul>
         </nav>
     </footer>

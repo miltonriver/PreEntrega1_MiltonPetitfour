@@ -1,7 +1,7 @@
-.footer_inicio{
+.footer_inicio {
     font-size: 16px;
-    font-family:'Poppins', sans-serif, 'Roboto Mono', monospace, 'Merriweather', serif;
-    color:rgb(240, 9, 17);
+    font-family: 'Poppins', sans-serif, 'Roboto Mono', monospace, 'Merriweather', serif;
+    color: rgb(240, 9, 17);
     border: 1px solid;
     background-color: #8D99AE;
     display: flex;
@@ -10,9 +10,34 @@
     align-items: center;
     flex-wrap: wrap;
     align-content: space-around;
-} 
 
-.icono_facebook{
-    width: 20px;
-    height: 20px;
+    .checkbox_footer {
+        color: #111945;
+        font-weight: bolder;
+    }
+
+    .icono_facebook {
+        width: 20px;
+        height: 20px;
+    }
+
+    .enlace_facebook_footer {
+        color: #0425a6;
+        text-decoration: none;
+        font-weight: bolder;
+
+        &:hover {
+            font-size: 20px;
+        }
+    }
+
+    .enlace_nav_footer {
+        color: #0425a6;
+        text-decoration: none;
+        font-weight: bolder;
+
+        &:hover {
+            font-size: 20px;
+        }
+    }
 }

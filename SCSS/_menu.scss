@@ -1,17 +1,22 @@
-
-.lista1_inicio{
+/* menú del navegador del header de todas las páginas */
+.lista1_inicio {
     font-family: 'Roboto Mono', monospace, 'Poppins', sans-serif;
-    display:flex;
+    display: flex;
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
-    li{
+
+    li {
         padding: 2px 1px;
-        button{
+
+        .boton_nav_header {
             padding: 3px 5px;
             font-weight: bolder;
             color: #eb0606;
             border-radius: 10px;
+            line-height: normal;
+            font-size: 11px;
+            font-family: cursive;
         }
     }
 }

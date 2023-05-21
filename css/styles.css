@@ -9,33 +9,506 @@ html {
   font-size: 62.5%;
 }
 
+/***********************************
+			/* 1. BODY */
+/***********************************/
+body {
+  background: #181828;
+}
+
+label {
+  cursor: pointer;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+}
+
+.top-header:before {
+  background-image: url(https://1.bp.blogspot.com/-gxsOcYWghHA/Xp_izTh4sFI/AAAAAAAAU8s/y637Fwg99qAuzW9na_NT_uApny8Vce95gCEwYBhgL/s1600/header-footer-gradient-bg.png);
+}
+
+.top-header:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-repeat: repeat-x;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.starsec {
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
+  animation: animStar 150s linear infinite;
+}
+
+.starthird {
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
+  animation: animStar 10s linear infinite;
+}
+
+.starfourth {
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
+  animation: animStar 50s linear infinite;
+}
+
+.starfifth {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 571px 173px #00BCD4, 1732px 143px #00BCD4, 1745px 454px #FF5722, 234px 784px #00BCD4, 1793px 1123px #FF9800, 1076px 504px #03A9F4, 633px 601px #FF5722, 350px 630px #FFEB3B, 1164px 782px #00BCD4, 76px 690px #3F51B5, 1825px 701px #CDDC39, 1646px 578px #FFEB3B, 544px 293px #2196F3, 445px 1061px #673AB7, 928px 47px #00BCD4, 168px 1410px #8BC34A, 777px 782px #9C27B0, 1235px 1941px #9C27B0, 104px 1690px #8BC34A, 1167px 1338px #E91E63, 345px 1652px #009688, 1682px 1196px #F44336, 1995px 494px #8BC34A, 428px 798px #FF5722, 340px 1623px #F44336, 605px 349px #9C27B0, 1339px 1344px #673AB7, 1102px 1745px #3F51B5, 1592px 1676px #2196F3, 419px 1024px #FF9800, 630px 1033px #4CAF50, 1995px 1644px #00BCD4, 1092px 712px #9C27B0, 1355px 606px #F44336, 622px 1881px #CDDC39, 1481px 621px #9E9E9E, 19px 1348px #8BC34A, 864px 1780px #E91E63, 442px 1136px #2196F3, 67px 712px #FF5722, 89px 1406px #F44336, 275px 321px #009688, 592px 630px #E91E63, 1012px 1690px #9C27B0, 1749px 23px #673AB7, 94px 1542px #FFEB3B, 1201px 1657px #3F51B5, 1505px 692px #2196F3, 1799px 601px #03A9F4, 656px 811px #00BCD4, 701px 597px #00BCD4, 1202px 46px #FF5722, 890px 569px #FF5722, 1613px 813px #2196F3, 223px 252px #FF9800, 983px 1093px #F44336, 726px 1029px #FFC107, 1764px 778px #CDDC39, 622px 1643px #F44336, 174px 1559px #673AB7, 212px 517px #00BCD4, 340px 505px #FFF, 1700px 39px #FFF, 1768px 516px #F44336, 849px 391px #FF9800, 228px 1824px #FFF, 1119px 1680px #FFC107, 812px 1480px #3F51B5, 1438px 1585px #CDDC39, 137px 1397px #FFF, 1080px 456px #673AB7, 1208px 1437px #03A9F4, 857px 281px #F44336, 1254px 1306px #CDDC39, 987px 990px #4CAF50, 1655px 911px #00BCD4, 1102px 1216px #FF5722, 1807px 1044px #FFF, 660px 435px #03A9F4, 299px 678px #4CAF50, 1193px 115px #FF9800, 918px 290px #CDDC39, 1447px 1422px #FFEB3B, 91px 1273px #9C27B0, 108px 223px #FFEB3B, 146px 754px #00BCD4, 461px 1446px #FF5722, 1004px 391px #673AB7, 1529px 516px #F44336, 1206px 845px #CDDC39, 347px 583px #009688, 1102px 1332px #F44336, 709px 1756px #00BCD4, 1972px 248px #FFF, 1669px 1344px #FF5722, 1132px 406px #F44336, 320px 1076px #CDDC39, 126px 943px #FFEB3B, 263px 604px #FF5722, 1546px 692px #F44336;
+  animation: animStar 80s linear infinite;
+}
+
+@keyframes animStar {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-2000px);
+  }
+}
+:focus {
+  outline: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/* 1. END BODY */
+/***********************************/
+/***********************************
+			/* 2. CONTENT */
+/***********************************/
+/* 2.1. Section error */
+.error {
+  min-height: 100vh;
+  position: relative;
+  padding: 240px 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.error__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.error__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.error__message {
+  text-align: center;
+  color: #181828;
+}
+
+.message__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 5.6rem;
+  padding-bottom: 40px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.message__text {
+  font-family: "Montserrat", sans-serif;
+  line-height: 42px;
+  font-size: 18px;
+  padding: 0 60px;
+  max-width: 680px;
+  margin: auto;
+}
+
+.error__nav {
+  max-width: 600px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.e-nav__form {
+  position: relative;
+  height: 45px;
+  overflow: hidden;
+  width: 170px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #212121;
+  padding-left: 10px;
+  padding-right: 46px;
+}
+
+.e-nav__icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #212121;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+
+.e-nav__link {
+  height: 45px;
+  line-height: 45px;
+  width: 170px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  border: 1px solid #181828;
+  color: #181828;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.e-nav__link:before {
+  content: "";
+  height: 200px;
+  background: #212121;
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  width: 260px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
+
+.e-nav__link:after {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 999;
+  position: relative;
+}
+
+.e-nav__link:after {
+  content: "Página de inicio";
+}
+
+.e-nav__link:hover:before {
+  top: -60px;
+  right: -50px;
+}
+
+.e-nav__link:hover {
+  color: #fff;
+}
+
+.e-nav__link:nth-child(2):hover:after {
+  color: #fff;
+}
+
+/* 2.1. END Section Error */
+/* 2.2. Social style */
+.error__social {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 20px;
+  z-index: 10;
+}
+
+.e-social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.e-social__icon {
+  padding-bottom: 30px;
+}
+
+.e-social__icon:last-child {
+  padding-bottom: 0;
+}
+
+.e-social__link {
+  color: #fff;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  display: block;
+}
+
+.e-social__link:hover {
+  opacity: 0.7;
+}
+
+/* 2.2. END Social style */
+/* 2.3. Lamp */
+.lamp {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  margin: 0px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: center top;
+  animation-timing-function: cubic-bezier(0.6, 0, 0.38, 1);
+  animation: move 5.1s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(-40deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
+.cable {
+  width: 8px;
+  height: 248px;
+  background-image: linear-gradient(rgba(32, 148, 218, 0.7), rgb(193, 65, 25)), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.cover {
+  width: 200px;
+  height: 80px;
+  background: #0bd5e8;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: relative;
+  z-index: 200;
+}
+
+.in-cover {
+  width: 100%;
+  max-width: 200px;
+  height: 20px;
+  border-radius: 100%;
+  background: #08ffff;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  bottom: -9px;
+  z-index: 100;
+}
+
+.in-cover .bulb {
+  width: 50px;
+  height: 50px;
+  background-color: #08fffa;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -20px;
+  margin: 0px auto;
+  -webkit-box-shadow: 0 0 15px 7px rgba(0, 255, 255, 0.8), 0 0 40px 25px rgba(0, 255, 255, 0.5), -75px 0 30px 15px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 25px 7px rgba(127, 255, 255, 0.8), 0 0 64px 47px rgba(0, 255, 255, 0.5), 0px 0 30px 15px rgba(0, 255, 255, 0.2);
+}
+
+.light {
+  width: 200px;
+  height: 0px;
+  border-bottom: 900px solid rgba(44, 255, 255, 0.24);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 270px;
+  margin: 0px auto;
+  z-index: 1;
+  border-radius: 90px 90px 0px 0px;
+}
+
+/* 2.3. END Lamp */
+/***********************************
+			/* 2. END CONTENT */
+/***********************************/
+/***********************************
+			/* 3. RESPONSIVE */
+/***********************************/
+.error {
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+@media (max-width: 1400px) {
+  .lamp {
+    zoom: 0.5;
+  }
+  .error__content {
+    top: 55%;
+  }
+  .message__title {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .message__title {
+    font-size: 34px;
+  }
+  .error__content {
+    top: 55%;
+  }
+}
+@media (max-width: 950px) {
+  .lamp__wrap {
+    max-height: 100vh;
+    overflow: hidden;
+    max-width: 100vw;
+  }
+  .error__social {
+    bottom: 30px;
+    top: auto;
+    transform: none;
+    width: 100%;
+    position: fixed;
+    left: 0;
+  }
+  .e-social__icon {
+    display: inline-block;
+    padding-right: 30px;
+  }
+  .e-social__icon:last-child {
+    padding-right: 0;
+  }
+  .e-social__icon {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 750px) {
+  body,
+  html {
+    max-height: 100vh;
+  }
+  .error__content {
+    position: static;
+    margin: 0 auto;
+    transform: none;
+    padding-top: 300px;
+  }
+  .error {
+    padding-top: 0;
+    padding-bottom: 100px;
+    height: 100vh;
+  }
+}
+@media (max-width: 650px) {
+  .message__title {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+  .message__text {
+    font-size: 16px;
+    line-height: 2;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .lamp {
+    zoom: 0.6;
+  }
+  .error__content {
+    padding-top: 180px;
+  }
+}
+@media (max-width: 480px) {
+  .message__title {
+    font-size: 30px;
+  }
+  .message__text {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+  }
+  .error__nav {
+    margin-top: 20px;
+  }
+}
 #header_inicio {
   background-color: #8D99AE;
   display: flex;
+  color: red;
+  border: 1px solid;
   width: 100%;
   padding: 15px;
 }
-
-.div_inicio {
+#header_inicio .div_inicio {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
 }
-
-.logo_redondos {
+#header_inicio .div_inicio .logo_redondos {
   width: 100px;
   height: 100px;
   border-radius: 50px;
 }
-
-.titulo_inicio {
+#header_inicio .div_inicio .titulo_inicio {
   font-family: "Merriweather", serif, "Poppins", sans-serif;
   font-size: 62px;
   text-align: center;
   color: red;
 }
 
+/* menú del navegador del header de todas las páginas */
 .lista1_inicio {
   font-family: "Roboto Mono", monospace, "Poppins", sans-serif;
   display: flex;
@@ -46,84 +519,115 @@ html {
 .lista1_inicio li {
   padding: 2px 1px;
 }
-.lista1_inicio li button {
+.lista1_inicio li .boton_nav_header {
   padding: 3px 5px;
   font-weight: bolder;
   color: #eb0606;
   border-radius: 10px;
+  line-height: normal;
+  font-size: 11px;
+  font-family: cursive;
 }
 
 #body_principal {
   background-color: rgba(192, 199, 205, 0.62);
+  /* main de la página principal (index) */
 }
-
-/* main de la página principal (index) */
-.principal_inicio {
+#body_principal .principal_inicio {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
-#seccion_inicial {
+#body_principal .principal_inicio #seccion_inicial {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* sección de imágenes alusivas en página principal */
 }
-
-#articulo_inicial {
+#body_principal .principal_inicio #seccion_inicial #articulo_inicial {
   display: flex;
   flex-direction: column;
   width: 60%;
   align-items: center;
   text-align: justify;
 }
-#articulo_inicial section {
+#body_principal .principal_inicio #seccion_inicial #articulo_inicial section {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
-#articulo_inicial section h2 {
+#body_principal .principal_inicio #seccion_inicial #articulo_inicial section h2 {
   color: #bd1f06;
   font-size: 22px;
   padding: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
-.parrafo_inicio {
+#body_principal .principal_inicio #seccion_inicial #articulo_inicial section .parrafo_inicio {
   color: #161A1D;
   padding: 5px 15px;
   margin: 0;
-  font-weight: bold;
   font-size: 13px;
   font-family: "Poppins", sans-serif, "Roboto Mono", monospace;
 }
-
-.mi_mapa_inicio {
-  width: 300px;
-  height: 250px;
-  border: 1px solid;
-  margin: 10px 15px 20px 15px;
+#body_principal .principal_inicio #seccion_inicial #articulo_inicial section .parrafo_inicio a {
+  text-decoration: none;
+  color: #e30707;
+  font-weight: bolder;
 }
-
-#seccion_index_imagenes {
+#body_principal .principal_inicio #seccion_inicial #articulo_inicial section .parrafo_inicio abbr {
+  border-bottom: 1px dotted #ec0707;
+  cursor: help;
+  position: relative;
+}
+#body_principal .principal_inicio #seccion_inicial #articulo_inicial section .parrafo_inicio abbr:after {
+  content: attr(data-title);
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  position: absolute;
+  z-index: 1;
+  left: 125%;
+  top: 90%;
+  transform: translateX(-50%);
+  width: 180px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#body_principal .principal_inicio #seccion_inicial #articulo_inicial section .parrafo_inicio abbr:hover:after {
+  opacity: 1;
+}
+#body_principal .principal_inicio #seccion_inicial #articulo_inicial section .parrafo_inicio mark {
+  color: rgb(12, 38, 38);
+  font-size: 0.9em;
+}
+#body_principal .principal_inicio #seccion_inicial #articulo_inicial section .frase_final {
+  font-size: 1.2em;
+}
+#body_principal .principal_inicio #seccion_inicial #articulo_inicial section .mi_mapa_inicio {
+  width: 95%;
+  height: 25em;
+  border: 1px solid;
+  margin: 10px 350px 20px 15px;
+}
+#body_principal .principal_inicio #seccion_inicial #seccion_index_imagenes {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
-.imagen_index_principal1 {
+#body_principal .principal_inicio #seccion_inicial #seccion_index_imagenes .imagen_index_principal1 {
   width: 400px;
   height: 220px;
   padding: 10px;
 }
-
-.imagen_index_principal2 {
+#body_principal .principal_inicio #seccion_inicial #seccion_index_imagenes .imagen_index_principal2 {
   width: 400px;
   height: 350px;
   padding: 0px 10px;
 }
-
-.imagen_index_principal3 {
+#body_principal .principal_inicio #seccion_inicial #seccion_index_imagenes .imagen_index_principal3 {
   width: 400px;
   height: 200px;
   padding: 10px;
@@ -137,6 +641,7 @@ html {
   grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
   grid-template-areas: "parrafo1 parrafo1 parrafo2 parrafo2" "parrafo3 parrafo3 parrafo4 parrafo4" "parrafo5 parrafo5 parrafo5 parrafo5";
+  /* párrafos descriptivos e imágenes de fondo página de integrantes */
 }
 #principal_integrantes #parrafo_indio {
   grid-area: parrafo1;
@@ -167,10 +672,25 @@ html {
 #principal_integrantes div p {
   text-align: justify;
   padding: 30px 50px;
-  color: rgb(101, 186, 219);
   font-size: 18px;
+  font-weight: 500;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-size: cover;
+}
+#principal_integrantes div .parrafo_historia_indio {
+  color: rgb(101, 186, 219);
+}
+#principal_integrantes div .parrafo_historia_skay {
+  color: rgb(16, 17, 54);
+}
+#principal_integrantes div .parrafo_historia_semilla {
+  color: rgb(56, 243, 200);
+}
+#principal_integrantes div .parrafo_historia_dawi {
+  color: rgb(225, 234, 235);
+}
+#principal_integrantes div .parrafo_historia_sidotti {
+  color: rgb(101, 186, 219);
 }
 #principal_integrantes div h2 {
   color: rgb(127, 255, 214);
@@ -181,7 +701,7 @@ html {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #principal_integrantes div a {
-  color: #3300ff;
+  color: #970909;
   text-decoration: none;
   font-weight: bolder;
 }
@@ -281,6 +801,78 @@ html {
   margin-top: 5px;
 }
 
+/* sección article: discografía de la página de historia de la banda */
+#articulo_discografia_historia h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 10px;
+  margin-bottom: 5px;
+}
+#articulo_discografia_historia div {
+  display: flex;
+  align-items: center;
+}
+#articulo_discografia_historia div img {
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+#articulo_discografia_historia div img:hover {
+  width: 270px;
+  height: 200px;
+}
+#articulo_discografia_historia div figcaption {
+  font-size: 9px;
+  text-align: center;
+  margin: 2px 10px;
+}
+#articulo_discografia_historia div p {
+  color: #223a4d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  padding: 0px 10px;
+}
+#articulo_discografia_historia .portada_disco4 {
+  width: 190px;
+}
+#articulo_discografia_historia .portada_disco4:hover {
+  width: 300px;
+  height: 200px;
+}
+#articulo_discografia_historia .disco1,
+#articulo_discografia_historia .disco3,
+#articulo_discografia_historia .disco5,
+#articulo_discografia_historia .disco7,
+#articulo_discografia_historia .disco9 {
+  margin-left: 20px;
+}
+#articulo_discografia_historia .disco2,
+#articulo_discografia_historia .disco4,
+#articulo_discografia_historia .disco6,
+#articulo_discografia_historia .disco8,
+#articulo_discografia_historia .disco10 {
+  flex-direction: row-reverse;
+  margin-right: 20px;
+}
+#articulo_discografia_historia .disco7 {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "imagen1 parrafo" "imagen2 parrafo";
+  align-items: center;
+  justify-items: center;
+}
+#articulo_discografia_historia .disco7 .portada_disco7a {
+  grid-area: imagen1;
+}
+#articulo_discografia_historia .disco7 .portada_disco7b {
+  grid-area: imagen2;
+}
+#articulo_discografia_historia .disco7 .parrafo_disco7 {
+  grid-area: parrafo;
+}
+
 #principal_historia {
   background-color: #d7e1e5;
   /* contenidos para toda la página en general */
@@ -303,8 +895,8 @@ html {
   color: #223a4d;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  margin: 0px 20px;
-  padding: 10px;
+  margin: 0px 15px;
+  padding: 5px 0px;
   text-align: justify;
 }
 #principal_historia #seccion_principal_historia {
@@ -315,6 +907,10 @@ html {
   /* inicio artículo orígenes de la banda */
   /* fin artículo orígenes de la banda */
   /* inicio artículo integrantes */
+}
+#principal_historia #seccion_principal_historia a {
+  color: #970909;
+  text-decoration: none;
 }
 #principal_historia #seccion_principal_historia #articulo_introduccion_historia {
   display: flex;
@@ -369,12 +965,14 @@ html {
 
 .principal_contacto {
   background-image: url(../img/contacto/redondos_fondo2.jpg);
+  opacity: 0.9;
   /* Formulario de contacto */
 }
 .principal_contacto .formulario_contacto {
+  font-weight: bolder;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 22px;
-  color: #E5383B;
+  color: #f71429;
   padding-left: 20%;
   padding-bottom: 10px;
   display: flex;
@@ -397,10 +995,11 @@ html {
 .principal_contacto .formulario_contacto .boton_enviar {
   margin-top: 15px;
   margin-bottom: 10px;
-  padding: 3px;
-  border-radius: 5px;
-  color: #8D99AE;
-  font-weight: bolder;
+  padding: 3px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #2c629b;
+  font-weight: 600;
 }
 
 .footer_inicio {
@@ -416,13 +1015,37 @@ html {
   flex-wrap: wrap;
   align-content: space-around;
 }
-
-.icono_facebook {
+.footer_inicio .checkbox_footer {
+  color: #111945;
+  font-weight: bolder;
+}
+.footer_inicio .icono_facebook {
   width: 20px;
   height: 20px;
 }
+.footer_inicio .enlace_facebook_footer {
+  color: #0425a6;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.footer_inicio .enlace_facebook_footer:hover {
+  font-size: 20px;
+}
+.footer_inicio .enlace_nav_footer {
+  color: #0425a6;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.footer_inicio .enlace_nav_footer:hover {
+  font-size: 20px;
+}
 
 @media screen and (max-width: 480px) {
+  #header_inicio .div_inicio .titulo_inicio {
+    font-size: 43px;
+    padding: 20px;
+    font-weight: 800;
+  }
   #seccion_inicial {
     flex-direction: column;
     align-items: center;
@@ -476,12 +1099,12 @@ html {
     font-size: 14px;
   }
   #principal_discografia #seccion_principal_discografia div a:hover img {
-    width: 160px;
-    height: 160px;
+    width: 190px;
+    height: 190px;
   }
   #principal_discografia #seccion_principal_discografia div a:hover .imagen_disco4 {
-    width: 200px;
-    height: 160px;
+    width: 235px;
+    height: 190px;
   }
   #principal_discografia #seccion_principal_discografia div img {
     width: 130px;
@@ -507,11 +1130,87 @@ html {
   }
   /* Fin de diseño responsive página de discografía */
   /* inicio diseño responsive página de historia */
+  #principal_historia #seccion_principal_historia {
+    /* sección article: discografía de la página de historia de la banda */
+  }
   #principal_historia #seccion_principal_historia #articulo_origenes_historia #origenes_historia {
     flex-direction: column;
   }
   #principal_historia #seccion_principal_historia #articulo_origenes_historia #origenes_historia img {
     margin: 10px;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia h2 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 10px;
+    margin-bottom: 5px;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia div {
+    display: flex;
+    align-items: center;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia div img {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    margin-bottom: 0px;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia div img:hover {
+    width: 270px;
+    height: 200px;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia div figcaption {
+    font-size: 9px;
+    text-align: center;
+    margin: 2px 10px 5px 10px;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia div p {
+    text-align: justify;
+    padding: 0px;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .portada_disco4 {
+    width: 190px;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .portada_disco4:hover {
+    width: 300px;
+    height: 200px;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco1 p,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco3 p,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco5 p,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco7 p,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco9 p {
+    margin-left: 0px;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco2,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco4,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco6,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco8,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco10 {
+    flex-direction: row-reverse;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco2 p,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco4 p,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco6 p,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco8 p,
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco10 p {
+    margin-right: 0px;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco7 {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: "imagen1 parrafo" "imagen2 parrafo";
+    align-items: center;
+    justify-items: center;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco7 .portada_disco7a {
+    grid-area: imagen1;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco7 .portada_disco7b {
+    grid-area: imagen2;
+  }
+  #principal_historia #seccion_principal_historia #articulo_discografia_historia .disco7 .parrafo_disco7 {
+    grid-area: parrafo;
   }
   #principal_historia #seccion_principal_historia #integrantes_historia {
     flex-direction: column;
@@ -531,6 +1230,7 @@ html {
     height: 130px;
     margin: 10px;
   }
+  /* fin diseño  responsive 480px página de historia de la banda */
   /* menú del navegador de todas las páginas */
   .lista1_inicio {
     flex-direction: column;
@@ -549,14 +1249,18 @@ html {
   .principal_contacto .formulario_contacto .boton_enviar {
     color: rgb(85, 85, 131);
   }
+  /* fin formulario página de contacto */
+  /* Footer de todas las páginas */
   .footer_inicio {
     font-size: 12px;
   }
-  .titulo_inicio {
-    font-size: 44px;
-    padding: 20px;
+}
+@media screen and (max-width: 800px) {
+  #body_principal .principal_inicio #seccion_inicial #articulo_inicial section .mi_mapa_inicio {
+    width: 100%;
+    padding: 2px;
+    margin: 5px 25px 20px 25px;
   }
-  /* fin formulario página de contactos */
 }
 
 /*# sourceMappingURL=styles.css.map */

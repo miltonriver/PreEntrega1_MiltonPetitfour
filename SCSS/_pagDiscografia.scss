@@ -1,47 +1,59 @@
-#principal_discografia{
+#principal_discografia {
     background-color: #d7e1e5;
-    #seccion_principal_discografia{
+
+    #seccion_principal_discografia {
         display: grid;
         grid-auto-columns: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr;
         gap: 5px;
-        grid-template-areas: 
-        "disco1 disco2 disco3"
-        "disco4 disco5 disco6"
-        "disco7 disco8 disco9"
-        ". disco10 .";
-        .disco_Gulp{
+        grid-template-areas:
+            "disco1 disco2 disco3"
+            "disco4 disco5 disco6"
+            "disco7 disco8 disco9"
+            ". disco10 .";
+
+        .disco_Gulp {
             grid-area: disco1;
         }
-        .disco_Oktubre{
+
+        .disco_Oktubre {
             grid-area: disco2;
         }
-        .disco_Baion{
+
+        .disco_Baion {
             grid-area: disco3;
         }
-        .disco_Bang{
+
+        .disco_Bang {
             grid-area: disco4;
         }
-        .disco_Mosca{
+
+        .disco_Mosca {
             grid-area: disco5;
         }
-        .disco_LoboVol1{
+
+        .disco_LoboVol1 {
             grid-area: disco6;
         }
-        .disco_LoboVol2{
+
+        .disco_LoboVol2 {
             grid-area: disco7;
         }
-        .disco_Luzbelito{
+
+        .disco_Luzbelito {
             grid-area: disco8;
         }
-        .disco_Bondi{
+
+        .disco_Bondi {
             grid-area: disco9;
         }
-        .disco_Momo{
+
+        .disco_Momo {
             grid-area: disco10;
         }
-        div{
+
+        div {
             font-family: Arial, Helvetica, sans-serif;
             margin: 10px;
             margin-top: 0px;
@@ -51,42 +63,52 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            a{
+
+            a {
                 text-decoration: none;
-                &:hover{
+
+                &:hover {
                     font-size: 16px;
-                    img{
+
+                    img {
                         width: 200px;
                         height: 200px;
                     }
-                    .imagen_disco4{
+
+                    .imagen_disco4 {
                         width: 250px;
                         height: 200px;
                     }
                 }
             }
-            img{
+
+            img {
                 width: 150px;
                 height: 150px;
             }
-            .imagen_disco4{
+
+            .imagen_disco4 {
                 width: 220px;
             }
-            h2{
+
+            h2 {
                 color: #660708;
                 font-size: 22px;
                 text-align: center;
                 margin: 10px;
             }
-            ol{
+
+            ol {
                 font-size: 12px;
                 margin: 10px;
                 margin-left: 30px;
                 padding: 5px;
-                li{
+
+                li {
                     color: #BA181B;
                     padding: 5px;
-                    audio{
+
+                    audio {
                         width: 190px;
                         height: 20px;
                         margin-top: 5px;
@@ -96,4 +118,3 @@
         }
     }
 }
-

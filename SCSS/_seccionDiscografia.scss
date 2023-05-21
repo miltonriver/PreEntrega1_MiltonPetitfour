@@ -1,0 +1,88 @@
+/* sección article: discografía de la página de historia de la banda */
+#articulo_discografia_historia {
+    h2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 10px;
+        margin-bottom: 5px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            margin-bottom: 0px;
+
+            &:hover {
+                width: 270px;
+                height: 200px;
+            }
+        }
+
+        figcaption {
+            font-size: 9px;
+            text-align: center;
+            margin: 2px 10px;
+        }
+
+        p {
+            color: #223a4d;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            text-align: justify;
+            padding: 0px 10px;
+        }
+    }
+
+    .portada_disco4 {
+        width: 190px;
+
+        &:hover {
+            width: 300px;
+            height: 200px;
+        }
+    }
+
+    .disco1,
+    .disco3,
+    .disco5,
+    .disco7,
+    .disco9 {
+        margin-left: 20px;
+    }
+
+    .disco2,
+    .disco4,
+    .disco6,
+    .disco8,
+    .disco10 {
+        flex-direction: row-reverse;
+        margin-right: 20px;
+    }
+
+    .disco7 {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas:
+            "imagen1 parrafo"
+            "imagen2 parrafo";
+        align-items: center;
+        justify-items: center;
+
+        .portada_disco7a {
+            grid-area: imagen1;
+        }
+
+        .portada_disco7b {
+            grid-area: imagen2;
+        }
+
+        .parrafo_disco7 {
+            grid-area: parrafo;
+        }
+    }
+}

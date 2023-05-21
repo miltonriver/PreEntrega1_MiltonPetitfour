@@ -1,164 +1,290 @@
-@media screen and (max-width: 480px){
-    #seccion_inicial{
+@media screen and (max-width: 480px) {
+    #header_inicio {
+        .div_inicio {
+            .titulo_inicio {
+                font-size: 43px;
+                padding: 20px;
+                font-weight: 800;
+            }
+        }
+    }
+
+    #seccion_inicial {
         flex-direction: column;
         align-items: center;
     }
-    
-    #articulo_inicial{
+
+    #articulo_inicial {
         width: 85%;
     }
 
     /* Adaptación de la página de Integrantes al diseño responsive */
-    #principal_integrantes{
+    #principal_integrantes {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 2fr);
-        grid-template-areas: 
-        "parrafo1"
-        "parrafo2"
-        "parrafo3"
-        "parrafo4"
-        "parrafo5";
+        grid-template-areas:
+            "parrafo1"
+            "parrafo2"
+            "parrafo3"
+            "parrafo4"
+            "parrafo5";
         gap: 5px;
-        div{
+
+        div {
             height: 350px;
             display: flex;
             align-items: center;
-            p{
+
+            p {
                 padding: 10px 15px;
-                color:rgb(231 84 84);
+                color: rgb(231 84 84);
                 font-size: 16px;
             }
-            h2{
-                color:rgb(203 15 15);
+
+            h2 {
+                color: rgb(203 15 15);
                 padding: 8px;
                 font-size: 22px;
             }
-            a{
+
+            a {
                 color: #00d0ff;
             }
         }
     }
-    #parrafo_sidotti{
+
+    #parrafo_sidotti {
         flex-direction: row;
         justify-content: space-evenly;
     }
+
     /* Fin página de integrantes diseño responsive */
 
     /* adaptación al diseño responsive página de discografía */
-    #principal_discografia{
-        #seccion_principal_discografia{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-        gap: 0px;
-        grid-template-areas: 
-        "disco1 disco2"
-        "disco3 disco4"
-        "disco5 disco6"
-        "disco7 disco8"
-        "disco9 disco10";
-        div{
-            margin: 0px;
-            margin-top: 10px;
-            padding-top: 10px;
-            a{
-                &:hover{
-                    font-size: 14px;
-                    img{
-                        width: 160px;
-                        height: 160px;
+    #principal_discografia {
+        #seccion_principal_discografia {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+            gap: 0px;
+            grid-template-areas:
+                "disco1 disco2"
+                "disco3 disco4"
+                "disco5 disco6"
+                "disco7 disco8"
+                "disco9 disco10";
+
+            div {
+                margin: 0px;
+                margin-top: 10px;
+                padding-top: 10px;
+
+                a {
+                    &:hover {
+                        font-size: 14px;
+
+                        img {
+                            width: 190px;
+                            height: 190px;
+                        }
+
+                        .imagen_disco4 {
+                            width: 235px;
+                            height: 190px;
+                        }
                     }
-                    .imagen_disco4{
-                        width: 200px;
-                        height: 160px;
-                    }
                 }
-            }
-            img{
-                width: 130px;
-                height: 130px;
-            }
-            .imagen_disco4{
-                width: 180px;
+
+                img {
+                    width: 130px;
+                    height: 130px;
                 }
-            h2{
-                font-size: 20px;
-                margin: 5px;
+
+                .imagen_disco4 {
+                    width: 180px;
                 }
-            ol{
-                margin: 5px;
-                margin-left: 15px;
-                padding: 3px;
-                li{
+
+                h2 {
+                    font-size: 20px;
+                    margin: 5px;
+                }
+
+                ol {
+                    margin: 5px;
+                    margin-left: 15px;
                     padding: 3px;
-                    audio{
-                        width: 180px;
+
+                    li {
+                        padding: 3px;
+
+                        audio {
+                            width: 180px;
                         }
                     }
                 }
             }
         }
     }
+
     /* Fin de diseño responsive página de discografía */
 
     /* inicio diseño responsive página de historia */
-    #principal_historia{
-        #seccion_principal_historia{
-                #articulo_origenes_historia{
-                    #origenes_historia {
-                        flex-direction: column;
-                        img{
-                            margin: 10px;
-                        }
+    #principal_historia {
+        #seccion_principal_historia {
+            #articulo_origenes_historia {
+                #origenes_historia {
+                    flex-direction: column;
+
+                    img {
+                        margin: 10px;
                     }
                 }
-                #integrantes_historia{
-                    flex-direction:column;
-                    figure{
-                        display: flex;
-                        align-items: center;
-                        margin: 15px;
-                    }
-                    .imagen1_integrantes{
-                        width: 170px;
-                        height: 130px;
+            }
+
+            /* sección article: discografía de la página de historia de la banda */
+            #articulo_discografia_historia {
+                h2 {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    margin: 10px;
+                    margin-bottom: 5px;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 150px;
+                        height: 100px;
                         margin: 10px;
+                        margin-bottom: 0px;
+
+                        &:hover {
+                            width: 270px;
+                            height: 200px;
+                        }
                     }
-                    .imagen2_integrantes{
-                        width: 200px;
-                        height: 130px;
-                        margin: 10px;
+
+                    figcaption {
+                        font-size: 9px;
+                        text-align: center;
+                        margin: 2px 10px 5px 10px;
                     }
+
+                    p {
+                        text-align: justify;
+                        padding: 0px;
+                    }
+                }
+
+                .portada_disco4 {
+                    width: 190px;
+
+                    &:hover {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+
+                .disco1,
+                .disco3,
+                .disco5,
+                .disco7,
+                .disco9 {
+                    p {
+                        margin-left: 0px;
+                    }
+                }
+
+                .disco2,
+                .disco4,
+                .disco6,
+                .disco8,
+                .disco10 {
+                    flex-direction: row-reverse;
+
+                    p {
+                        margin-right: 0px;
+                    }
+                }
+
+                .disco7 {
+                    display: grid;
+                    grid-template-columns: 0.1fr 1fr;
+                    grid-template-rows: 0.5fr 0.5fr;
+                    grid-template-areas:
+                        "imagen1 parrafo"
+                        "imagen2 parrafo";
+                    align-items: center;
+                    justify-items: center;
+
+                    .portada_disco7a {
+                        grid-area: imagen1;
+                    }
+
+                    .portada_disco7b {
+                        grid-area: imagen2;
+                    }
+
+                    .parrafo_disco7 {
+                        grid-area: parrafo;
+                    }
+                }
+            }
+
+            #integrantes_historia {
+                flex-direction: column;
+
+                figure {
+                    display: flex;
+                    align-items: center;
+                    margin: 15px;
+                }
+
+                .imagen1_integrantes {
+                    width: 170px;
+                    height: 130px;
+                    margin: 10px;
+                }
+
+                .imagen2_integrantes {
+                    width: 200px;
+                    height: 130px;
+                    margin: 10px;
                 }
             }
         }
+    }
+
+    /* fin diseño  responsive 480px página de historia de la banda */
 
     /* menú del navegador de todas las páginas */
-    .lista1_inicio{
+    .lista1_inicio {
         flex-direction: column;
         padding: 5px;
     }
-    
+
     /* formulario página de contacto */
-    .principal_contacto{
-        .formulario_contacto{
+    .principal_contacto {
+        .formulario_contacto {
             font-size: 20px;
-            color:rgb(245, 7, 62);
+            color: rgb(245, 7, 62);
             padding-left: 0%;
-            align-items:center;
-            label{
+            align-items: center;
+
+            label {
                 padding-top: 20px;
             }
-            .boton_enviar{
+
+            .boton_enviar {
                 color: rgb(85, 85, 131);
             }
         }
     }
-    .footer_inicio{
+
+    /* fin formulario página de contacto */
+
+    /* Footer de todas las páginas */
+    .footer_inicio {
         font-size: 12px;
     }
-    .titulo_inicio{
-        font-size: 44px;
-        padding: 20px;
-    }
-    /* fin formulario página de contactos */  
 }

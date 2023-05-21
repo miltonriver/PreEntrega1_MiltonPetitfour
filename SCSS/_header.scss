@@ -1,26 +1,28 @@
-#header_inicio{
+#header_inicio {
     background-color: #8D99AE;
     display: flex;
+    color: red;
+    border: 1px solid;
     width: 100%;
     padding: 15px;
-} 
 
-.div_inicio{
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
-    width: 100%;
+    .div_inicio {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        .logo_redondos {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+
+        .titulo_inicio {
+            font-family: 'Merriweather', serif, 'Poppins', sans-serif;
+            font-size: 62px;
+            text-align: center;
+            color: red;
+        }
+    }
 }
-
-.logo_redondos{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-}
-
-.titulo_inicio{
-    font-family: 'Merriweather', serif,'Poppins', sans-serif;
-    font-size: 62px;
-    text-align: center;
-    color:red;
-} 

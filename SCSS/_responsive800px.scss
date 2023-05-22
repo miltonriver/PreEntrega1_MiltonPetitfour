@@ -1,17 +1,94 @@
 @media screen and (max-width: 800px) {
-    #body_principal {
-        .principal_inicio {
-            #seccion_inicial {
-                #articulo_inicial {
-                    section {
-                        .mi_mapa_inicio {
-                            width: 100%;
-                            padding: 2px;
-                            margin: 5px 25px 20px 25px;
-                        }
-                    }
-                }
+    /* Adaptación diseño responsive 800px del header de todas las páginas */
+    #header_inicio .div_inicio {
+        justify-content: space-between;
+        height: 175px;
+
+        .titulo_inicio{
+            font-size: 56px;
+            font-weight: bold;
+        }
+    }
+
+    .lista1_inicio{
+        flex-direction: column;
+        padding: 15px;
+        margin-bottom: 0px;
+
+        li .boton_nav_header{
+            padding: 5px 10px;
+        }
+    }
+    /* FIN diseño responsive 800px del header de todas las páginas */
+
+    /* footer de todas las páginas */
+    .footer_inicio {
+        height: 95px;
+
+        ul{
+            margin-bottom: 0px;
+        }
+    }
+    /* FIN footer de todas las páginas */
+
+    /* Adaptación de la página de Inicio al diseño responsive 800px */ 
+    #body_principal .principal_inicio #seccion_inicial {
+        #seccion_index_imagenes {
+            height: 800px;
+            justify-content: space-evenly;
+        }
+
+        #articulo_inicial section {
+            h2{
+                margin-bottom: 0px;
+            }
+
+            .mi_mapa_inicio {
+                height: 20em;
+                border: 2px solid;
+                margin: 5px 10px 15px 10px;
+            }
+    
+            .parrafo_inicio {
+                color: #06375c;
+                font-size: 12px;
             }
         }
     }
+    /* Fin de diseño responsive página de Inicio 800px */
+
+    /* Adaptación de la página de Integrantes al diseño responsive 800px */
+    #parrafo_indio, #parrafo_dawi, #parrafo_sidotti {
+        background-position: bottom;
+    }
+    /* Fin página de Integrantes diseño responsive 800px*/
+    
+    /* adaptación al diseño responsive página de Discografía 800px*/
+    #principal_discografia #seccion_principal_discografia div {
+        margin: 0px 3px;
+        padding: 3px;
+        padding-top: 15px;
+    }
+    /* Fin de diseño responsive página de Discografía 800px */
+
+    /* inicio diseño responsive página de Historia 800px */
+    #principal_historia .parrafo_descriptivo_historia {
+            color: #085595;
+            font-size: 13px;
+        }
+    
+    #articulo_discografia_historia div p {
+        color: #085595;
+        font-size: 13px;
+    }
+    /* fin diseño  responsive 800px página de Historia de la banda */
+
+    /* formulario página de Contacto diseño responsive 480px */
+    .principal_contacto {
+        .formulario_contacto {
+            font-size: 24px;
+            color: #41d52f;
+        }
+    }
+    /* fin formulario página de Contacto */
 }

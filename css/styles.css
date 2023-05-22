@@ -607,10 +607,10 @@ a {
   font-size: 1.2em;
 }
 #body_principal .principal_inicio #seccion_inicial #articulo_inicial section .mi_mapa_inicio {
-  width: 95%;
+  width: 90%;
   height: 25em;
   border: 1px solid;
-  margin: 10px 350px 20px 15px;
+  margin: 10px 15px 20px 15px;
 }
 #body_principal .principal_inicio #seccion_inicial #seccion_index_imagenes {
   display: flex;
@@ -971,7 +971,7 @@ a {
 .principal_contacto .formulario_contacto {
   font-weight: bolder;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 22px;
+  font-size: 26px;
   color: #f71429;
   padding-left: 20%;
   padding-bottom: 10px;
@@ -1040,20 +1040,121 @@ a {
   font-size: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  /* Adaptación diseño responsive 800px del header de todas las páginas */
+  #header_inicio .div_inicio {
+    justify-content: space-between;
+    height: 175px;
+  }
+  #header_inicio .div_inicio .titulo_inicio {
+    font-size: 56px;
+    font-weight: bold;
+  }
+  .lista1_inicio {
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 0px;
+  }
+  .lista1_inicio li .boton_nav_header {
+    padding: 5px 10px;
+  }
+  /* FIN diseño responsive 800px del header de todas las páginas */
+  /* footer de todas las páginas */
+  .footer_inicio {
+    height: 95px;
+  }
+  .footer_inicio ul {
+    margin-bottom: 0px;
+  }
+  /* FIN footer de todas las páginas */
+  /* Adaptación de la página de Inicio al diseño responsive 800px */
+  #body_principal .principal_inicio #seccion_inicial #seccion_index_imagenes {
+    height: 800px;
+    justify-content: space-evenly;
+  }
+  #body_principal .principal_inicio #seccion_inicial #articulo_inicial section h2 {
+    margin-bottom: 0px;
+  }
+  #body_principal .principal_inicio #seccion_inicial #articulo_inicial section .mi_mapa_inicio {
+    height: 20em;
+    border: 2px solid;
+    margin: 5px 10px 15px 10px;
+  }
+  #body_principal .principal_inicio #seccion_inicial #articulo_inicial section .parrafo_inicio {
+    color: #06375c;
+    font-size: 12px;
+  }
+  /* Fin de diseño responsive página de Inicio 800px */
+  /* Adaptación de la página de Integrantes al diseño responsive 800px */
+  #parrafo_indio, #parrafo_dawi, #parrafo_sidotti {
+    background-position: bottom;
+  }
+  /* Fin página de Integrantes diseño responsive 800px*/
+  /* adaptación al diseño responsive página de Discografía 800px*/
+  #principal_discografia #seccion_principal_discografia div {
+    margin: 0px 3px;
+    padding: 3px;
+    padding-top: 15px;
+  }
+  /* Fin de diseño responsive página de Discografía 800px */
+  /* inicio diseño responsive página de Historia 800px */
+  #principal_historia .parrafo_descriptivo_historia {
+    color: #085595;
+    font-size: 13px;
+  }
+  #articulo_discografia_historia div p {
+    color: #085595;
+    font-size: 13px;
+  }
+  /* fin diseño  responsive 800px página de Historia de la banda */
+  /* formulario página de Contacto diseño responsive 480px */
+  .principal_contacto .formulario_contacto {
+    font-size: 24px;
+    color: #41d52f;
+  }
+  /* fin formulario página de Contacto */
+}
 @media screen and (max-width: 480px) {
+  /* Adaptación del menú del navegador del header de todas las páginas a diseño responsive 480px */
+  #header_inicio .div_inicio {
+    height: 150px;
+  }
   #header_inicio .div_inicio .titulo_inicio {
     font-size: 43px;
     padding: 20px;
     font-weight: 800;
   }
-  #seccion_inicial {
+  .lista1_inicio {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .lista1_inicio li .boton_nav_header {
+    padding: 5px;
+  }
+  /* FIN adaptación del menú del navegador del header de todas las páginas */
+  /* Adaptación de la página de Inicio al diseño responsive 480px */
+  #body_principal .principal_inicio #seccion_inicial {
     flex-direction: column;
     align-items: center;
   }
-  #articulo_inicial {
+  #body_principal .principal_inicio #seccion_inicial #seccion_index_imagenes .imagen_index_principal1 {
+    padding: 5px 5px 0px 5px;
+  }
+  #body_principal .principal_inicio #seccion_inicial #seccion_index_imagenes .imagen_index_principal2 {
+    padding: 0px 5px;
+  }
+  #body_principal .principal_inicio #seccion_inicial #seccion_index_imagenes .imagen_index_principal3 {
+    padding: 0px 5px 5px 5px;
+  }
+  #body_principal .principal_inicio #seccion_inicial #articulo_inicial {
+    width: 95%;
+  }
+  #body_principal .principal_inicio #seccion_inicial #articulo_inicial section .mi_mapa_inicio {
+    margin: 10px;
     width: 85%;
   }
-  /* Adaptación de la página de Integrantes al diseño responsive */
+  /* Fin de diseño responsive página de Inicio 480px */
+  /* Adaptación de la página de Integrantes al diseño responsive 480px */
   #principal_integrantes {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 2fr);
@@ -1082,8 +1183,8 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  /* Fin página de integrantes diseño responsive */
-  /* adaptación al diseño responsive página de discografía */
+  /* Fin página de Integrantes diseño responsive 480px*/
+  /* adaptación al diseño responsive página de Discografía 480px*/
   #principal_discografia #seccion_principal_discografia {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
@@ -1128,10 +1229,10 @@ a {
   #principal_discografia #seccion_principal_discografia div ol li audio {
     width: 180px;
   }
-  /* Fin de diseño responsive página de discografía */
-  /* inicio diseño responsive página de historia */
+  /* Fin de diseño responsive página de Discografía 480px */
+  /* inicio diseño responsive página de Historia 480px */
   #principal_historia #seccion_principal_historia {
-    /* sección article: discografía de la página de historia de la banda */
+    /* sección article: discografía de la página de Historia de la banda */
   }
   #principal_historia #seccion_principal_historia #articulo_origenes_historia #origenes_historia {
     flex-direction: column;
@@ -1230,13 +1331,8 @@ a {
     height: 130px;
     margin: 10px;
   }
-  /* fin diseño  responsive 480px página de historia de la banda */
-  /* menú del navegador de todas las páginas */
-  .lista1_inicio {
-    flex-direction: column;
-    padding: 5px;
-  }
-  /* formulario página de contacto */
+  /* fin diseño  responsive 480px página de Historia de la banda */
+  /* formulario página de Contacto diseño responsive 480px */
   .principal_contacto .formulario_contacto {
     font-size: 20px;
     color: rgb(245, 7, 62);
@@ -1249,17 +1345,11 @@ a {
   .principal_contacto .formulario_contacto .boton_enviar {
     color: rgb(85, 85, 131);
   }
-  /* fin formulario página de contacto */
-  /* Footer de todas las páginas */
+  /* fin formulario página de Contacto */
+  /* Footer de todas las páginas diseño responsive 480px */
   .footer_inicio {
     font-size: 12px;
-  }
-}
-@media screen and (max-width: 800px) {
-  #body_principal .principal_inicio #seccion_inicial #articulo_inicial section .mi_mapa_inicio {
-    width: 100%;
-    padding: 2px;
-    margin: 5px 25px 20px 25px;
+    height: 60px;
   }
 }
 

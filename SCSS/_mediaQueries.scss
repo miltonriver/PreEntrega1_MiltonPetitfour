@@ -1,24 +1,55 @@
 @media screen and (max-width: 480px) {
-    #header_inicio {
-        .div_inicio {
-            .titulo_inicio {
-                font-size: 43px;
-                padding: 20px;
-                font-weight: 800;
+    /* Adaptación del menú del navegador del header de todas las páginas a diseño responsive 480px */
+    #header_inicio .div_inicio {
+        height: 150px;
+        .titulo_inicio {
+            font-size: 43px;
+            padding: 20px;
+            font-weight: 800;
+        }
+    }
+    
+    .lista1_inicio {
+        flex-direction: column;
+        padding: 5px;
+
+        li .boton_nav_header{
+            padding: 5px;
+        }
+    }
+    /* FIN adaptación del menú del navegador del header de todas las páginas */
+
+    /* Adaptación de la página de Inicio al diseño responsive 480px */  
+    #body_principal .principal_inicio #seccion_inicial {
+        flex-direction: column;
+        align-items: center;
+
+        #seccion_index_imagenes {
+            .imagen_index_principal1 {
+                padding: 5px 5px 0px 5px;
+            }
+
+            .imagen_index_principal2 {
+                padding: 0px 5px;
+            }
+
+            .imagen_index_principal3 {
+                padding: 0px 5px 5px 5px;
+            }
+        }
+
+        #articulo_inicial {
+            width: 95%;
+
+            section .mi_mapa_inicio {
+                margin: 10px;
+                width: 85%;
             }
         }
     }
+    /* Fin de diseño responsive página de Inicio 480px */
 
-    #seccion_inicial {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #articulo_inicial {
-        width: 85%;
-    }
-
-    /* Adaptación de la página de Integrantes al diseño responsive */
+    /* Adaptación de la página de Integrantes al diseño responsive 480px */
     #principal_integrantes {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 2fr);
@@ -58,9 +89,9 @@
         justify-content: space-evenly;
     }
 
-    /* Fin página de integrantes diseño responsive */
+    /* Fin página de Integrantes diseño responsive 480px*/
 
-    /* adaptación al diseño responsive página de discografía */
+    /* adaptación al diseño responsive página de Discografía 480px*/
     #principal_discografia {
         #seccion_principal_discografia {
             grid-template-columns: 1fr 1fr;
@@ -125,9 +156,9 @@
         }
     }
 
-    /* Fin de diseño responsive página de discografía */
+    /* Fin de diseño responsive página de Discografía 480px */
 
-    /* inicio diseño responsive página de historia */
+    /* inicio diseño responsive página de Historia 480px */
     #principal_historia {
         #seccion_principal_historia {
             #articulo_origenes_historia {
@@ -140,7 +171,7 @@
                 }
             }
 
-            /* sección article: discografía de la página de historia de la banda */
+            /* sección article: discografía de la página de Historia de la banda */
             #articulo_discografia_historia {
                 h2 {
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -255,15 +286,9 @@
         }
     }
 
-    /* fin diseño  responsive 480px página de historia de la banda */
+    /* fin diseño  responsive 480px página de Historia de la banda */
 
-    /* menú del navegador de todas las páginas */
-    .lista1_inicio {
-        flex-direction: column;
-        padding: 5px;
-    }
-
-    /* formulario página de contacto */
+    /* formulario página de Contacto diseño responsive 480px */
     .principal_contacto {
         .formulario_contacto {
             font-size: 20px;
@@ -281,10 +306,11 @@
         }
     }
 
-    /* fin formulario página de contacto */
+    /* fin formulario página de Contacto */
 
-    /* Footer de todas las páginas */
+    /* Footer de todas las páginas diseño responsive 480px */
     .footer_inicio {
         font-size: 12px;
+        height: 60px;
     }
 }

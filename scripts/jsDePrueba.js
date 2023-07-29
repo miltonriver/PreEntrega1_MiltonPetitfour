@@ -40,3 +40,22 @@
         } else {
             alert("el precio es mayor que 100")
         }; */
+
+        class UsuarioRegistrado {
+            constructor(nombre, password, edad, sexo){
+                this.nombre = nombre;
+                this.password = password;
+                this.edad = edad;
+                this.sexo = sexo;
+            }
+
+        }
+        function crearUsuario() {
+            let nombre = prompt ("Ingrese nombre de usuario");
+            let password = prompt ("Ingrese su contraseña");
+            let edad = prompt ("Ingrese su edad");
+            let sexo = prompt ("Ingrese su sexo");
+            let usuarioRegistrado = new UsuarioRegistrado(nombre, password, edad, sexo);
+            return usuarioRegistrado;
+        }
+        crearUsuario();

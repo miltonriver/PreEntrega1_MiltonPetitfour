@@ -978,14 +978,46 @@ a {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  /* ventana emergente creada con JS */
 }
 .principal_contacto .formulario_contacto label {
   padding-top: 25px;
   padding-bottom: 5px;
 }
+.principal_contacto .formulario_contacto .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.principal_contacto .formulario_contacto .modal .modal_contenido {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+.principal_contacto .formulario_contacto .modal .modal_contenido .boton_cerrar {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.principal_contacto .formulario_contacto .modal .modal_contenido .boton_cerrar:hover,
+.principal_contacto .formulario_contacto .modal .modal_contenido .boton_cerrar:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 .principal_contacto .formulario_contacto .entrada_texto {
   width: 300px;
   height: 25px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .principal_contacto .formulario_contacto .entrada_comentarios {
   width: 300px;

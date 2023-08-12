@@ -1,65 +1,90 @@
+/* let form = document.getElementById("register");
+let nombre = document.getElementById("nombre").value; */
 let usuario = "milton";
 let password = "12345";
 let usuariosNuevos = [
     {
-      usuario: "usuario1",
-      password: "clave1",
-      edad: 25,
-      sexo: "M"
+        usuario: "usuario1",
+        password: "clave1",
+        email: "correo1@hotmail.com"
     },
     {
-      usuario: "usuario2",
-      password: "clave2",
-      edad: 30,
-      sexo: "F"
+        usuario: "usuario2",
+        password: "clave2",
+        email: "correo2@gmail.com"
     },
-    {
-        usuario: "usuario3",
-        password: "clave3",
-        edad: 40,
-        sexo: "F"
-      },
-  ];
+];
 
-function ingresarUsuario(){
-    let otroUsuario  = prompt("Ingrese su nombre de usuario");
-    return otroUsuario;
+localStorage.setItem('usuariosNuevos', JSON.stringify(usuariosNuevos)); //Convertir el array a formato JSON para poder guardarlo en el local storage
+
+let usuariosNuevosGuardados = JSON.parse(localStorage.getItem('usuariosNuevos')); //Extraígo el valor del array usuariosNuevos y lo guardo en otra variable para poder utilizarla
+
+function ingresarUsuario() {
+    return document.getElementById("entrada_usuario").value;
 }
 
-function ingresarPassword(){
-    let otroPassword = prompt("Ingrese su contraseña");
-    return otroPassword;
+function ingresarPassword() {
+    return document.getElementById("entrada_password").value;
 }
 
-let intentos = 1;
-const maxIntentos = 5;
-while (intentos <= maxIntentos){
+document.getElementById("boton_enviar").addEventListener("click", function(event) {
+    event.preventDefault(); // Es para evitar el envío del formulario
+
     let nuevoUsuario = ingresarUsuario();
     let nuevoPassword = ingresarPassword();
 
-    if (usuario === nuevoUsuario ){
-        if (password === nuevoPassword){
-            alert("Los datos ingresados son correctos");
-            break;
-        } else {
-            alert("El usuario ingresado o la contraseña son incorrectos");
+    let resultadoAutenticacion = autenticar(nuevoUsuario, nuevoPassword);
+    
+    let modal = document.getElementById("modal");
+    let modalMensaje = document.getElementById("modal_mensaje");
+    let botonCerrar = document.getElementById("boton_cerrar");
+
+    if (resultadoAutenticacion === "correctos") {
+        //alert("Los datos ingresados son correctos");
+        /* let mensajeNuevo = document.getElementById("mensajeJs");
+        mensajeNuevo.innerHTML = "<h2>Al fin funcionó!!</h2>"; */
+        //estas líneas fueron creadas de forma primaria para probar que mi código JS funcionaba sobre el DOM
+        modalMensaje.textContent = "Los datos ingresados son correctos, bienvenido " + usuario;
+
+    } else if (resultadoAutenticacion === "nuevo") {
+        let usuarioNuevo = usuariosNuevosGuardados.find(user => user.usuario.toLowerCase() === nuevoUsuario.toLowerCase());
+        modalMensaje.textContent = "¡Bienvenido, usuario nuevo! Hemos enviado un correo de confirmación a la siguiente dirección de email: " + usuarioNuevo.email;
+        
+        /* alert("¡Bienvenido, usuario nuevo! Hemos enviado un correo de confirmación a la siguiente dirección de email: " + usuarioNuevo.email); */
+    } else {
+        modalMensaje.textContent = "El usuario ingresado o la contraseña son incorrectos";
+        
+        /* alert("El usuario ingresado o la contraseña son incorrectos"); */
+    }
+    modal.style.display = "block";
+
+    botonCerrar.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
         }
-    } else  {
-       let usuarioNuevo = usuariosNuevos.find(user => user.usuario === nuevoUsuario && user.password === nuevoPassword);
-        if (usuarioNuevo) {
-            alert("¡Bienvenido, usuario nuevo! Edad: " + usuarioNuevo.edad + ", Sexo: " + usuarioNuevo.sexo);
-            break;
-        } else {
-            alert("El usuario ingresado o la contraseña son incorrectos. Intento: " + intentos);    
-        }   
+    });
+})
+
+
+function autenticar(usuarioInput, passwordInput) {
+    if (usuario === usuarioInput && password === passwordInput) {
+        return "correctos";
     }
 
-    if (intentos === maxIntentos){
-        alert("Se ha excedido el número máximo de intentos permitidos, espere unos minutos y vuelva a intentarlo")
-    } 
+    let usuarioNuevo = usuariosNuevosGuardados.find(user =>
+        user.usuario.toLowerCase() === usuarioInput.toLowerCase() &&
+        user.password === passwordInput);//guardar elementos y traerlos del local storage
 
-    intentos++;
+    if (usuarioNuevo) {
+        return "nuevo";
     }
+
+    return "incorrectos";
+}
 
 
 

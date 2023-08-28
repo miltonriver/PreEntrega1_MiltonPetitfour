@@ -1,0 +1,17 @@
+[
+    {
+        "usuario": "usuario1",
+        "password": "clave1",
+        "email": "correo1@hotmail.com"
+    },
+    {
+        "usuario": "usuario2",
+        "password": "clave2",
+        "email": "correo2@gmail.com"
+    },
+    {
+        "usuario": "usuario3",
+        "password": "clave3",
+        "email": "correo3@yahoo.com"
+    }
+]

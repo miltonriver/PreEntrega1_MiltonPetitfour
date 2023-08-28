@@ -1,5 +1,3 @@
-/* let form = document.getElementById("register");
-let nombre = document.getElementById("nombre").value; */
 
 Swal.fire({
     title: 'Bienvenido!',

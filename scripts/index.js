@@ -28,7 +28,6 @@ fetch ("../usuario.json")
     .then(datos => {
         //console.log(datos); //Prueba inicial de Fetch mediante consola
         const usuariosNuevos = datos;
-        console.log(usuariosNuevos);
 
         localStorage.setItem('usuariosNuevos', JSON.stringify(usuariosNuevos)); //Convertir el array a formato JSON para poder guardarlo en el local storage
 
